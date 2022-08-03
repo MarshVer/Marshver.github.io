@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MarshVer</title>
+  
+  
+  <link href="https://marshver.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://marshver.github.io/"/>
+  <updated>2022-07-27T14:01:45.000Z</updated>
+  <id>https://marshver.github.io/</id>
+  
+  <author>
+    <name>MarshVer</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Html学习笔记</title>
+    <link href="https://marshver.github.io/2022/07/27/html-xue-xi-xin-de/"/>
+    <id>https://marshver.github.io/2022/07/27/html-xue-xi-xin-de/</id>
+    <published>2022-07-27T14:01:45.000Z</published>
+    <updated>2022-07-27T14:01:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Web标准的构成&quot;&gt;&lt;a href=&quot;#Web标准的构成&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://marshver.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VScode中C和C++的环境配置</title>
+    <link href="https://marshver.github.io/2022/07/05/vscode-zhong-c-he-c-de-huan-jing-pei-zhi/"/>
+    <id>https://marshver.github.io/2022/07/05/vscode-zhong-c-he-c-de-huan-jing-pei-zhi/</id>
+    <published>2022-07-05T02:22:25.000Z</published>
+    <updated>2022-07-05T02:22:25.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;VScode中配置C-x2F-C&quot;&gt;&lt;a href=&quot;#VScode中配置C-x2F-C&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="配置" scheme="https://marshver.github.io/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客出现的问题</title>
+    <link href="https://marshver.github.io/2022/07/03/bo-ke-chu-xian-de-wen-ti/"/>
+    <id>https://marshver.github.io/2022/07/03/bo-ke-chu-xian-de-wen-ti/</id>
+    <published>2022-07-03T08:02:15.000Z</published>
+    <updated>2022-07-03T08:02:15.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;图片不显示&quot;&gt;&lt;a href=&quot;#图片不显示&quot; class=&quot;headerlink&quot; title=&quot;图片不显示&quot;&gt;&lt;/a&gt;图片不显示&lt;/h1&gt;&lt;p&gt;在根目录安装hexo-asset-image，就能按照markdown的格式进行图片的插入。&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    
+    <category term="博客" scheme="https://marshver.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客相关</title>
+    <link href="https://marshver.github.io/2022/07/01/bo-ke-xiang-guan/"/>
+    <id>https://marshver.github.io/2022/07/01/bo-ke-xiang-guan/</id>
+    <published>2022-07-01T07:27:42.000Z</published>
+    <updated>2022-07-01T07:27:42.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;个人备份习惯&quot;&gt;&lt;a href=&quot;#个人备份习惯&quot; class=&quot;headerlink&quot; title=&quot;个人备份习惯&quot;&gt;&lt;/a&gt;个人备份习惯&lt;/h1&gt;&lt;pre class=&quot; language-git&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    
+    <category term="博客" scheme="https://marshver.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
