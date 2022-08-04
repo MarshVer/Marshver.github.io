@@ -442,7 +442,7 @@
 </code></pre>
 <p>当该配置被应用后，使用hexo new命令创建新文章时，会生成相同名字的文件夹，也就是文章资源文件夹，你可以把与该文章有关的任何文件放在该文件夹中，并在文章中用相对路径![]（.&#x2F;…）引用。</p>
 <h1 id="备份问题"><a href="#备份问题" class="headerlink" title="备份问题"></a>备份问题</h1><p>一般我们hexo d上传部署到github的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。也就是上传的是在本地目录里自动生成的.deploy_git里面。<br>其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到github,所以可以利用git的分支管理，将源文件上传到另一个分支即可。</p>
-<h2 id="创建新分支"><a href="#创建新分支" class="headerlink" title="创建新分支"></a>创建新分支</h2><p>下图所示位置输入分支名并确认即可创建（我的分支名为source）<br><img src="themes/matery/source/medias/loading.gif" data-original="https://s2.loli.net/2022/08/03/a3EcMRejTlP4WHC.png"><br>将刚才创建的分支设置为默认分支：<br><img src="themes/matery/source/medias/loading.gif" data-original="https://s2.loli.net/2022/08/03/pAekOq18VfCscYv.png"></p>
+<h2 id="创建新分支"><a href="#创建新分支" class="headerlink" title="创建新分支"></a>创建新分支</h2><p>下图所示位置输入分支名并确认即可创建（我的分支名为source）<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/a3EcMRejTlP4WHC.png"><br>将刚才创建的分支设置为默认分支：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/pAekOq18VfCscYv.png"></p>
 <h2 id="获取-git文件夹"><a href="#获取-git文件夹" class="headerlink" title="获取.git文件夹"></a>获取.git文件夹</h2><p>去任意地方把刚刚的source分支给clone下来</p>
 <pre class=" language-bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/marshver/marshver.github.io
 </code></pre>
@@ -1057,8 +1057,8 @@ $(function () {
 
 <script>
             window.imageLazyLoadSetting = {
-                isSPA: false,
-                preloadRatio: 3,
+                isSPA: true,
+                preloadRatio: 1,
                 processImages: null,
             };
         </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
