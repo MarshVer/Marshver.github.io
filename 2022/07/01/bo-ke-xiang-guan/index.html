@@ -430,23 +430,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="个人备份习惯"><a href="#个人备份习惯" class="headerlink" title="个人备份习惯"></a>个人备份习惯</h1><pre class=" language-git"><code class="language-git">hexo clean
-git add .
-git commit -m <span class="token string">"Backup"</span>
-git push
+                <h1 id="个人备份习惯"><a href="#个人备份习惯" class="headerlink" title="个人备份习惯"></a>个人备份习惯</h1><pre class=" language-bash"><code class="language-bash">hexo clean
+<span class="token function">git</span> add <span class="token keyword">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"Backup"</span>
+<span class="token function">git</span> push
 hexo g
 hexo d
 </code></pre>
 <h1 id="恢复博客"><a href="#恢复博客" class="headerlink" title="恢复博客"></a>恢复博客</h1><p>安装git、nodejs、hexo等等。。然后克隆项目到本地<br>输入下列命令克隆博客必须文件(hexo分支)</p>
-<pre class=" language-git"><code class="language-git"><span class="token command">$ git clone https://github.com/marshver/marshver.github.io</span>
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/marshver/marshver.github.io
 </code></pre>
 <p>在clone下来的那个文件夹里面执行</p>
-<pre class=" language-git"><code class="language-git">npm install hexo-cli
-npm install
-npm install hexo-deployer-git
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-cli
+<span class="token function">npm</span> <span class="token function">install</span>
+<span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git
 </code></pre>
 <p>最后可以执行如下代码就可以开始你的博客了</p>
-<pre class=" language-git"><code class="language-git">hexo clean
+<pre class=" language-bash"><code class="language-bash">hexo clean
 hexo g
 hexo d
 </code></pre>
