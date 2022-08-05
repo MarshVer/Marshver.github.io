@@ -453,8 +453,38 @@
 <span class="token function">git</span> commit -m <span class="token string">"Backup"</span>
 <span class="token function">git</span> push origin <span class="token function">source</span>
 </code></pre>
-<p>这样就备份完博客的源文件，且在Github上能看到两个分支(master和source)。</p>
-<h2 id="如想恢复博客请看“博客相关”中的恢复博客"><a href="#如想恢复博客请看“博客相关”中的恢复博客" class="headerlink" title="如想恢复博客请看“博客相关”中的恢复博客"></a>如想恢复博客请看“博客相关”中的恢复博客</h2><a href="/2022/07/01/bo-ke-xiang-guan/" title="博客相关">博客相关</a>
+<p>这样就备份完博客的源文件，且在Github上能看到两个分支(master和source)。后续备份最后一步只需git push即可。</p>
+<h2 id="恢复博客"><a href="#恢复博客" class="headerlink" title="恢复博客"></a>恢复博客</h2><p>如想恢复博客请看“博客相关”中的恢复博客<a href="/2022/07/01/bo-ke-xiang-guan/" title="博客相关">博客相关</a></p>
+<h1 id="博客优化"><a href="#博客优化" class="headerlink" title="博客优化"></a>博客优化</h1><h2 id="图片问题"><a href="#图片问题" class="headerlink" title="图片问题"></a>图片问题</h2><h3 id="搭配图床"><a href="#搭配图床" class="headerlink" title="搭配图床"></a>搭配图床</h3><p>图片如果用本地文件，会影响服务器的响应速度，我们可以把图片放到图床上，在博客里用图片的url地址引用，可以在一定程度上加快服务器的响应速度。</p>
+<p>这里我推荐sm.ms<a target="_blank" rel="noopener" href="https://sm.ms/">https://sm.ms/</a>, 首先是免费的，虽然只有5个G，但对于只放图片够用了。</p>
+<p>可以搭配PicGo图片批量上传，直接生成图片链接到剪切板，还能查看历史图片的URL链接，非常方便。</p>
+<p>去官网： <a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a> 下载稳定版本的.exe文件，只需要将你自己sm.ms的API Token配置到PicGo上，即可使用。</p>
+<h3 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h3><p>懒加载一般是当图片滚动进可视窗口内才加载图片，可视窗口之外的图片则不加载，对服务器有一定的缓解压力作用。</p>
+<p>首先安装图片懒加载插件,根目录执行：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-lazyload-image --save
+</code></pre>
+<p>然后在Hexo根目录配置文件末尾加入以下代码：</p>
+<pre class=" language-yml"><code class="language-yml"># 图片懒加载
+lazyload:
+  enable: true
+  onlypost: true # 如果为 true，则只有来自帖子或页面的图像将支持延迟加载。# 如果为 false，则您网站的整个图像将使用延迟加载，包括来自您主题的图像 dist，但不包括来自 CSS 样式的背景图像。
+  loadingImg:  https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif # 加载图片 eg ./images/loading.gif
+  isSPA: true # optional
+  preloadRatio: 3 # 默认是 1
+</code></pre>
+<p>然后hexo cl &amp;&amp; hexo g &amp;&amp; hexo s即可生效。</p>
+<p>详细说明可以看原文介绍：<a target="_blank" rel="noopener" href="https://github.com/Troy-Yang/hexo-lazyload-image">https://github.com/Troy-Yang/hexo-lazyload-image</a></p>
+<p>一般情况下懒加载会和gallery插件会发生冲突，结果可能就是点开图片，左翻右翻都是loading image。matery主题的解决方案是：<br>修改 &#x2F;themes&#x2F;matery&#x2F;source&#x2F;js 中的 matery.js文件(我的是matery主题)<br>在第108行加上：</p>
+<pre class=" language-js"><code class="language-js"><span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'img[data-original]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">parent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">"href"</span><span class="token punctuation">,</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">"data-original"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="服务器加速"><a href="#服务器加速" class="headerlink" title="服务器加速"></a>服务器加速</h2><p>我们在把博客部署到github page上，会发现每次hexo d上传文件后，第一次的打开速度都比较慢，这主要是因为github的访问速度较慢。</p>
+<p>我们可以把博客静态文件部署到其他服务器上来加快速度，例如腾讯云或者阿里云，但国内的服务器大多要钱，而且还需要一个已备案域名来绑定。（腾讯云有个webify服务可以实现类似的功能，价格也不贵，按量计费，访问少的博客一天才几分钱。但是它默认的域名太长，不便于记忆，如果你有一个已备案的域名，且不介意这一点钱可以使用腾讯云的webify，并且在项目设置里绑定你的域名）。</p>
+<p>白嫖党的我选择使用境外的Vercel或者netlify的免费服务器来加速。（vercel的速度好像比netlify的要快，强推）但毕竟是国外的，访问速度依旧没有国内的服务器块，而且可能偶尔会抽风，但对于个人博客够用了,下面介绍如何使用Vercel部署静态博客。</p>
+<p>首先进入Vercel的官网：<a target="_blank" rel="noopener" href="https://vercel.com/">https://vercel.com/</a></p>
+<p>Continue with Github使用Github授权并登录。点击New Porject，选择Browse All Templates选择你的博客框架，我的是hexo，然后选择Import Git Repository，授权博客文件的仓库，然后点击确定即可。settings中设置Your Username，则你的域名为Your Username.vercel.app。（是不是很好记！）</p>
+<p><strong>注</strong>：记得查看新建项目的view domains，左侧git项，Production Branch是博客源文件的分支（我的是source），不是hexo d生成的网页文件，是博客的源文件（包含主题和一些配置文件，其他服务器也是一样），不是的话记得修改，不然会报错。<strong>服务器的内容需要git push过一会才能生效。</strong></p>
 
                 
             </div>
@@ -1058,7 +1088,7 @@ $(function () {
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: true,
-                preloadRatio: 1,
+                preloadRatio: 3,
                 processImages: null,
             };
         </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
