@@ -411,7 +411,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-02
+                    2022-08-05
                 </div>
                 
 
@@ -641,7 +641,7 @@
 <td>&amp;nbsp;</td>
 </tr>
 </tbody></table>
-<h1 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h1><h2 id="表格标签基本结构"><a href="#表格标签基本结构" class="headerlink" title="表格标签基本结构"></a>表格标签基本结构</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+<h1 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h1><h2 id="表格相关标签"><a href="#表格相关标签" class="headerlink" title="表格相关标签"></a>表格相关标签</h2><h3 id="表格标签基本结构"><a href="#表格标签基本结构" class="headerlink" title="表格标签基本结构"></a>表格标签基本结构</h3><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>单元格内的文字<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
         ...
@@ -654,7 +654,7 @@
 <li>&lt;tr&gt;&lt;&#x2F;tr&gt;定义表格中的行，必须嵌套在&lt;table&gt;&lt;&#x2F;table&gt;中</li>
 <li>&lt;td&gt;&lt;&#x2F;td&gt;定义表格中的单元格，必须嵌套在&lt;tr&gt;&lt;&#x2F;tr&gt;中</li>
 </ul>
-<h2 id="表头单元格标签"><a href="#表头单元格标签" class="headerlink" title="表头单元格标签"></a>表头单元格标签</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+<h3 id="表头单元格标签"><a href="#表头单元格标签" class="headerlink" title="表头单元格标签"></a>表头单元格标签</h3><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>单元格内的文字<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
         ...
@@ -663,7 +663,10 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>表头单元格位于第一行或第一列，其内容默认加粗居中显示。</p>
-<h2 id="表格属性"><a href="#表格属性" class="headerlink" title="表格属性"></a>表格属性</h2><p>表格属性实际不常用，一般在CSS中设置。</p>
+<h3 id="表格结构标签"><a href="#表格结构标签" class="headerlink" title="表格结构标签"></a>表格结构标签</h3><p>在表格标签中，分别用：**<thead></thead><strong>标签</strong>表格的头部区域<strong>；</strong><tbody></tbody><strong>标签</strong>表格的主题区域**,这样更好的分清表格结构。</p>
+<thead>内部必须拥有<tr>标签，位于第一行。
+
+<h2 id="表格属性"><a href="#表格属性" class="headerlink" title="表格属性"></a>表格属性</h2><h3 id="一般属性"><a href="#一般属性" class="headerlink" title="一般属性"></a>一般属性</h3><p>表格属性实际不常用，一般在CSS中设置。</p>
 <table>
 <thead>
 <tr>
@@ -698,7 +701,41 @@
 <td>表格宽度</td>
 </tr>
 </tbody></table>
+<h3 id="合并单元格属性"><a href="#合并单元格属性" class="headerlink" title="合并单元格属性"></a>合并单元格属性</h3><ul>
+<li>跨行合并：rowspan&#x3D;”合并单元格的个数”（写在上测单元格）</li>
+<li>跨列合并：colspan&#x3D;”合并单元格的个数”（写在左侧单元格）<br>合并单元格个数包括自己，作为单元格的属性。</li>
+</ul>
+<p>合并单元格三部曲：</p>
+<ul>
+<li>确定跨行还是跨列</li>
+<li>找到目标单元格，写上合并方式&#x3D;合并的单元格的数量如：<td colspan="2">单元格内容</td></li>
+<li>删除多余的单元格</li>
+</ul>
+<h1 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h1><p>列表最大的特点就是整齐、整洁、有序。它作为布局会更加自由和方便。</p>
+<h2 id="无序列表（重点）"><a href="#无序列表（重点）" class="headerlink" title="无序列表（重点）"></a>无序列表（重点）</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+</code></pre>
+<ul></ul>中只能嵌套<li></li>，但<li></li>中可以容纳所有元素。
 
+<p>无序列表有自己的属性，但实际一般会使用CSS来设置</p>
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol></ol>标签用于定义有序列表，列表排序已数字显示，使用<li></li>标签定义列表项。
+
+<p>其他与无序列表一样。</p>
+<h2 id="自定义列表（重点）"><a href="#自定义列表（重点）" class="headerlink" title="自定义列表（重点）"></a>自定义列表（重点）</h2><p>自定义列表常用于对术语或名词进行解释和描述。</p>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>名词1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>名词1解释1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>名词1解释2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">></span></span>
+</code></pre>
+<dl></dl>里面只能有<dt></dt>和<dd></dd>
+一个<dt></dt>对应多个<dd></dd>
+
+</tr></thead>
                 
             </div>
             <hr/>
