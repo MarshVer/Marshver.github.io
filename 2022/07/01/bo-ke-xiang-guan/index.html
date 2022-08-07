@@ -30,7 +30,7 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="MarshVer" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -425,31 +425,30 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="个人备份习惯"><a href="#个人备份习惯" class="headerlink" title="个人备份习惯"></a>个人备份习惯</h1><pre class=" language-bash"><code class="language-bash">hexo clean
-<span class="token function">git</span> add <span class="token keyword">.</span>
+                <h1 id="个人备份习惯"><a href="#个人备份习惯" class="headerlink" title="个人备份习惯"></a>个人备份习惯</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
 <span class="token function">git</span> commit -m <span class="token string">"Backup"</span>
 <span class="token function">git</span> push
 hexo g
-hexo d
-</code></pre>
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="恢复博客"><a href="#恢复博客" class="headerlink" title="恢复博客"></a>恢复博客</h1><p>安装git、nodejs、hexo等等。。然后克隆项目到本地<br>输入下列命令克隆博客必须文件(hexo分支)</p>
-<pre class=" language-bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/marshver/marshver.github.io
-</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/marshver/marshver.github.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在clone下来的那个文件夹里面执行</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-cli
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-cli
 <span class="token function">npm</span> <span class="token function">install</span>
-<span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git
-</code></pre>
+<span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>最后可以执行如下代码就可以开始你的博客了</p>
-<pre class=" language-bash"><code class="language-bash">hexo clean
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean
 hexo g
-hexo d
-</code></pre>
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>

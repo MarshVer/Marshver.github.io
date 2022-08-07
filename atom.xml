@@ -6,7 +6,7 @@
   <link href="https://marshver.github.io/atom.xml" rel="self"/>
   
   <link href="https://marshver.github.io/"/>
-  <updated>2022-08-06T16:03:01.630Z</updated>
+  <updated>2022-08-07T16:16:24.565Z</updated>
   <id>https://marshver.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS学习笔记</title>
+    <link href="https://marshver.github.io/2022/08/07/css-xue-xi-bi-ji/"/>
+    <id>https://marshver.github.io/2022/08/07/css-xue-xi-bi-ji/</id>
+    <published>2022-08-07T13:42:36.000Z</published>
+    <updated>2022-08-07T16:16:24.565Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;CSS是层叠样式表的简称，主要用于设置HTML页面中的文本内容，图片的外形以及版面的布局和外观显示样式。&lt;/p&gt;
+&lt;h1 id=&quot;CSS语法规范&quot;&gt;&lt;a href=&quot;#CSS语法规范&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://marshver.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="前端" scheme="https://marshver.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>电脑必装软件合集</title>
@@ -44,7 +70,7 @@
     <link href="https://marshver.github.io/2022/07/27/html-xue-xi-xin-de/"/>
     <id>https://marshver.github.io/2022/07/27/html-xue-xi-xin-de/</id>
     <published>2022-07-27T14:01:45.000Z</published>
-    <updated>2022-08-06T15:10:16.501Z</updated>
+    <updated>2022-08-07T15:47:36.821Z</updated>
     
     
       
@@ -60,6 +86,8 @@
     
     
     <category term="学习笔记" scheme="https://marshver.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="前端" scheme="https://marshver.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -91,7 +119,7 @@
     <link href="https://marshver.github.io/2022/07/03/bo-ke-chu-xian-de-wen-ti/"/>
     <id>https://marshver.github.io/2022/07/03/bo-ke-chu-xian-de-wen-ti/</id>
     <published>2022-07-03T08:02:15.000Z</published>
-    <updated>2022-08-05T15:35:59.175Z</updated>
+    <updated>2022-08-07T16:09:34.852Z</updated>
     
     
       
@@ -122,7 +150,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;个人备份习惯&quot;&gt;&lt;a href=&quot;#个人备份习惯&quot; class=&quot;headerlink&quot; title=&quot;个人备份习惯&quot;&gt;&lt;/a&gt;个人备份习惯&lt;/h1&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h1 id=&quot;个人备份习惯&quot;&gt;&lt;a href=&quot;#个人备份习惯&quot; class=&quot;headerlink&quot; title=&quot;个人备份习惯&quot;&gt;&lt;/a&gt;个人备份习惯&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
         
       
     
