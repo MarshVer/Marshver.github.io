@@ -415,7 +415,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-09
+                    2022-08-10
                 </div>
                 
 
@@ -603,7 +603,63 @@ div &#123;font-family: Arial, "Microsoft YaHei", "微软雅黑";&#125;<span aria
 <li>新建CSS文件，将所有CSS代码放入此文件</li>
 <li>在HTML中，head里用&lt;link&gt;标签引入这个文件<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>CSS文件路径<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 </ol>
+<h1 id="Emmet语法"><a href="#Emmet语法" class="headerlink" title="Emmet语法"></a>Emmet语法</h1><p>Emmet语法的前身是Zen coding，它使用缩写，来提高html&#x2F;css的编写速度，Vscode内部已经集成该语法</p>
+<h2 id="快速生成HTML结构语法"><a href="#快速生成HTML结构语法" class="headerlink" title="快速生成HTML结构语法"></a>快速生成HTML结构语法</h2><ol>
+<li>生成标签，直接输入标签名，按tab键即可，比如div+tab</li>
+<li>生成多个相同标签，加上*数量即可，如div*4</li>
+<li>如果有父子级关系，可以用&gt;，如ul&gt;li就可以了</li>
+<li>兄弟级用+，如div+p</li>
+<li>生成带有类名或者id名的，类名用.classmane或者id名用#idname加tab，如p.p-class或p#p-id</li>
+<li>如果生成的div类名是有顺序的，可以用自增符号$,如p.demo$*5，即可生成class名为demo1~5的p标签</li>
+<li>生成标签内容可以用{}，如p{p内容}+tab</li>
+</ol>
+<p>5和6如果没有指定标签，默认是div标签。</p>
+<h2 id="快速生成CSS样式语法"><a href="#快速生成CSS样式语法" class="headerlink" title="快速生成CSS样式语法"></a>快速生成CSS样式语法</h2><p>CSS基本采取简写首字母形式即可</p>
+<p>如：w200+tab生成width: 200px；ih26+tab生成line-height: 26px</p>
+<h2 id="快速格式化代码"><a href="#快速格式化代码" class="headerlink" title="快速格式化代码"></a>快速格式化代码</h2><p>Alt+Shift+F快速格式化文档，实现代码格式自动调整。</p>
+<h1 id="CSS复合选择器"><a href="#CSS复合选择器" class="headerlink" title="CSS复合选择器"></a>CSS复合选择器</h1><p>复合选择器建立在基础选择器之上，对基础选择器进行组合形成的。</p>
+<ul>
+<li>更准确、更高效的选择目标标签</li>
+<li>由两个或多个基础选择器，通过不同的方式组合而成的</li>
+<li>常用复合选择器有：后代选择器、子选择器、并集选择器、伪类选择器等</li>
+</ul>
+<h2 id="后代选择器（重要）"><a href="#后代选择器（重要）" class="headerlink" title="后代选择器（重要）"></a>后代选择器（重要）</h2><p>后代选择器又称为包含选择器，可以选择父元素里面子元素。其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔。当标签发生嵌套时，内层标签就成为外层标签的后代。</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">ol li &#123;
+    color: red;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>即可选择将ol内部的li设置为red，也可搭配class使用。</p>
+<h2 id="子选择器（重要）"><a href="#子选择器（重要）" class="headerlink" title="子选择器（重要）"></a>子选择器（重要）</h2><p>只能选择作为某一元素的最近一级子元素。<br>写法：元素1＞元素2{样式声明}</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">ol>li &#123;
+    color: red;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>li内部的不会变化。</p>
+<h2 id="并集选择器（重要）"><a href="#并集选择器（重要）" class="headerlink" title="并集选择器（重要）"></a>并集选择器（重要）</h2><p>并集选择器可以选择多组标签，同时为他们定义相同的样式，通常用于集体声明。<br>写法：元素1, 元素2{样式声明}（通常一个元素名加，为一行）</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">div, p&#123;
+    color: red;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>元素可用后代选择器和子选择器代替</p>
+<h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>用于向某些选择器添加特殊的效果，比如给链接添加特殊喜爱过，或选择第1个，第n个元素。<br>用”:”表示，比如:hover（当鼠标经过的时候）、:first-child（第一个孩子）。<br>伪类选择器有很多，有链接伪类、结构伪类。</p>
+<h3 id="链接伪类"><a href="#链接伪类" class="headerlink" title="链接伪类"></a>链接伪类</h3><ul>
+<li>a:link{样式声明}        &#x2F;<em>选择所有未被访问的链接</em>&#x2F;</li>
+<li>a:visited{样式声明}     &#x2F;<em>选择所有已被访问的链接</em>&#x2F;</li>
+<li>a:hover{样式声明}       &#x2F;<em>选择鼠标指针位于其上的链接</em>&#x2F;</li>
+<li>a:avtive{样式声明}      &#x2F;<em>选择活动链接（鼠标按下未弹起的链接）</em>&#x2F;</li>
+</ul>
+<p>为了确保生效，请按照LVHA的顺序声明:link-:visited-:hover-:active</p>
+<p>实际开发经常用a指定链接样式，再用:hover定义鼠标悬停效果就可以了</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">a &#123;
+    color: #333;
+    text-decoration: none;
+&#125;
+:hover &#123;
+    color: #369;
+    text-decoration: underline;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h3 id="focus伪类选择器"><a href="#focus伪类选择器" class="headerlink" title=":focus伪类选择器"></a>:focus伪类选择器</h3><p>用于选取获得焦点（光标）的表单元素</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">imput:focus &#123;
+    background-color: yello;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
