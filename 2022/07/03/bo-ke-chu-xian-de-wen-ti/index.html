@@ -477,7 +477,7 @@
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="2-服务器加速"><a href="#2-服务器加速" class="headerlink" title="2.服务器加速"></a>2.服务器加速</h2><p>我们在把博客部署到github page上，会发现每次hexo d上传文件后，第一次的打开速度都比较慢，这主要是因为github的访问速度较慢。</p>
-<p>我们可以把博客静态文件部署到其他服务器上来加快速度，例如腾讯云或者阿里云，但国内的服务器大多要钱，而且还需要一个已备案域名来绑定。（腾讯云有个webify服务可以实现类似的功能，价格也不贵，按量计费，访问少的博客一天才几分钱。但是它默认的域名太长，不便于记忆，如果你有一个已备案的域名，且不介意这一点钱可以使用腾讯云的webify，并且在项目设置里绑定你的域名）。</p>
+<p>我们可以把博客的静态文件部署到其他服务器上来加快速度，例如腾讯云或者阿里云，但国内的服务器大多要钱，而且还需要一个已备案域名来绑定。（腾讯云有个webify服务可以实现类似的功能，价格也不贵，按量计费，访问少的博客一天才几分钱。但是它默认的域名太长，不便于记忆，如果你有一个已备案的域名，且不介意这一点钱可以使用腾讯云的webify，并且在项目设置里绑定你的域名）。</p>
 <p>白嫖党的我选择使用境外的Vercel或者netlify的免费服务器来加速。（vercel的速度好像比netlify的要快，强推）但毕竟是国外的，访问速度依旧没有国内的服务器块，而且可能偶尔会抽风，但对于个人博客够用了,下面介绍如何使用Vercel部署静态博客。</p>
 <p>首先进入Vercel的官网：<a target="_blank" rel="noopener" href="https://vercel.com/">https://vercel.com/</a></p>
 <p>Continue with Github使用Github授权并登录。点击New Porject，选择Browse All Templates选择你的博客框架，我的是hexo，然后选择Import Git Repository，授权博客文件的仓库，然后点击确定即可。settings中设置Your Username，则你的域名为Your Username.vercel.app。（是不是很好记！）</p>
