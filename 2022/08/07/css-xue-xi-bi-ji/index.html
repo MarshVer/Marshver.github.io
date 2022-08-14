@@ -415,7 +415,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-10
+                    2022-08-14
                 </div>
                 
 
@@ -438,7 +438,8 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>CSS是层叠样式表的简称，主要用于设置HTML页面中的文本内容，图片的外形以及版面的布局和外观显示样式。</p>
-<h1 id="CSS语法规范"><a href="#CSS语法规范" class="headerlink" title="CSS语法规范"></a>CSS语法规范</h1><p>CSS规则由两个主要的部分构成：选择器以及一条或多条声明</p>
+<p>注：Alt+Shift+F快速格式化文档，实现代码格式自动调整。</p>
+<h1 id="一、CSS语法规范"><a href="#一、CSS语法规范" class="headerlink" title="一、CSS语法规范"></a>一、CSS语法规范</h1><p>CSS规则由两个主要的部分构成：选择器以及一条或多条声明</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
     <span class="token selector">h1</span> <span class="token punctuation">&#123;</span>
       <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> 
@@ -446,14 +447,14 @@
     <span class="token punctuation">&#125;</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>经常写在head标签中新建的style中，属性用；结尾。<br>属性+属性名成为“键值对”。</p>
-<h1 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h1><p>选择器的作用：选择需要修改的标签。<br>选择器分为基础选择器和复合选择器。<br>基础选择器由单个选择器组成，包括：标签选择器，类选择器，id选择器和通配符选择器。</p>
-<h2 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h2><p>以html标签名为选择器，<strong>全选</strong><br>不能差异化样式。</p>
+<h1 id="二、CSS选择器"><a href="#二、CSS选择器" class="headerlink" title="二、CSS选择器"></a>二、CSS选择器</h1><p>选择器的作用：选择需要修改的标签。<br>选择器分为基础选择器和复合选择器。<br>基础选择器由单个选择器组成，包括：标签选择器，类选择器，id选择器和通配符选择器。</p>
+<h2 id="1-标签选择器"><a href="#1-标签选择器" class="headerlink" title="1.标签选择器"></a>1.标签选择器</h2><p>以html标签名为选择器，<strong>全选</strong><br>不能差异化样式。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">    h1 &#123;
       color: red; 
       font-size: 25px
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="类选择器-重点"><a href="#类选择器-重点" class="headerlink" title="类选择器(重点)"></a>类选择器(重点)</h2><p>类选择器可以单独选择一个或某几个标签<br>html元素以<strong>class属性</strong>来设置id选择器，CSS中id选择器以“**.**”来定义</p>
+<h2 id="2-类选择器-重点"><a href="#2-类选择器-重点" class="headerlink" title="2.类选择器(重点)"></a>2.类选择器(重点)</h2><p>类选择器可以单独选择一个或某几个标签<br>html元素以<strong>class属性</strong>来设置id选择器，CSS中id选择器以“**.**”来定义</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">.类名 &#123;
     属性1: 属性值1;
     ...
@@ -464,13 +465,13 @@
 <p>在需要修改属性的标签写上class类&#x3D;类名即可选择性修改。<br>一个标签可以指定多个类名，用空格隔开(在同一个class属性里)。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>类1 类2 类3 ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>多类<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h2><p>html元素以<strong>id属性</strong>来设置id选择器，CSS中id选择器以<strong>“#”</strong>来定义，<strong>id选择器只能被调用一次</strong>。</p>
+<h2 id="3-id选择器"><a href="#3-id选择器" class="headerlink" title="3.id选择器"></a>3.id选择器</h2><p>html元素以<strong>id属性</strong>来设置id选择器，CSS中id选择器以<strong>“#”</strong>来定义，<strong>id选择器只能被调用一次</strong>。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">#id名 &#123;
     属性1: 属性值1;
     ...
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h2><p>使用<strong>“*”</strong>定义，它表示选中页面中的所有元素。</p>
+<h2 id="4-通配符选择器"><a href="#4-通配符选择器" class="headerlink" title="4.通配符选择器"></a>4.通配符选择器</h2><p>使用<strong>“*”</strong>定义，它表示选中页面中的所有元素。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">* &#123;
     属性1: 属性值1;
     ..
@@ -481,15 +482,15 @@
     padding: 0;<span class="token comment">&lt;!-- 外边距 --></span>
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h1 id="CSS字体属性"><a href="#CSS字体属性" class="headerlink" title="CSS字体属性"></a>CSS字体属性</h1><p>CSS Fonts(字体)属性用于定义字体类型、大小、粗细和文本样式（斜体等）。</p>
-<h2 id="字体类型"><a href="#字体类型" class="headerlink" title="字体类型"></a>字体类型</h2><p>font-family：字体类型</p>
+<h1 id="三、CSS字体属性"><a href="#三、CSS字体属性" class="headerlink" title="三、CSS字体属性"></a>三、CSS字体属性</h1><p>CSS Fonts(字体)属性用于定义字体类型、大小、粗细和文本样式（斜体等）。</p>
+<h2 id="1-字体类型"><a href="#1-字体类型" class="headerlink" title="1.字体类型"></a>1.字体类型</h2><p>font-family：字体类型</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">p &#123; font-family: "微软雅黑";&#125;
 div &#123;font-family: Arial, "Microsoft YaHei", "微软雅黑";&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>为了兼容建议使用英文。<br>多字体用逗号隔开，从左向右优先级递减，若电脑一个字体都没有，将使用浏览器默认字体。</p>
-<h2 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h2><p>font-size： 字体大小</p>
+<h2 id="2-字体大小"><a href="#2-字体大小" class="headerlink" title="2.字体大小"></a>2.字体大小</h2><p>font-size： 字体大小</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">p &#123;font-size: 20px&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>将P改为body指定所有字体大小（除了标题字体，标题字体需要单独设置）。</p>
-<h2 id="字体粗细"><a href="#字体粗细" class="headerlink" title="字体粗细"></a>字体粗细</h2><p>font-weight：数字<br>实际开发更提倡使用数字表示字体的粗细。<br>也可使用下列属性名：</p>
+<h2 id="3-字体粗细"><a href="#3-字体粗细" class="headerlink" title="3.字体粗细"></a>3.字体粗细</h2><p>font-weight：数字<br>实际开发更提倡使用数字表示字体的粗细。<br>也可使用下列属性名：</p>
 <ul>
 <li>normal：默认正常的字体（400）</li>
 <li>bold：加粗（700）</li>
@@ -497,13 +498,13 @@ div &#123;font-family: Arial, "Microsoft YaHei", "微软雅黑";&#125;<span aria
 <li>lighter：细体</li>
 <li>number：数字表示粗细</li>
 </ul>
-<h2 id="文字样式"><a href="#文字样式" class="headerlink" title="文字样式"></a>文字样式</h2><p>font-style：属性名<br>主要使用以下属性：</p>
+<h2 id="4-文字样式"><a href="#4-文字样式" class="headerlink" title="4.文字样式"></a>4.文字样式</h2><p>font-style：属性名<br>主要使用以下属性：</p>
 <ul>
 <li>normal：默认值</li>
 <li>italic：斜体</li>
 </ul>
 <p>很少将字体改倾斜，一般将&lt;em, i&gt;改为不倾斜字体</p>
-<h2 id="字体复合属性"><a href="#字体复合属性" class="headerlink" title="字体复合属性"></a>字体复合属性</h2><p>使用字体复合属性可以节约代码。</p>
+<h2 id="5-字体复合属性"><a href="#5-字体复合属性" class="headerlink" title="5.字体复合属性"></a>5.字体复合属性</h2><p>使用字体复合属性可以节约代码。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">div &#123;
     font-style: italic;
     font-weight: 700;
@@ -513,8 +514,8 @@ div &#123;font-family: Arial, "Microsoft YaHei", "微软雅黑";&#125;<span aria
     font: italic 700 16px/ "Microsoft Yahei"
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>复合属性可以将字体属性值直接写在font中，但有严格的<strong>顺序</strong>：font：font-style font-weight font-size&#x2F;line-height font-family<br>即代码块中最后一行代码表示上面所有属性的复合，如果不想要某个属性可以不设置，但最后两个属性值必须填，否则设置无效。</p>
-<h1 id="文本属性"><a href="#文本属性" class="headerlink" title="文本属性"></a>文本属性</h1><p>CSS Text(文本)属性可定义文本的外观，比如：颜色、对齐文本、装饰文本、文本缩进、行间距等。</p>
-<h2 id="文本颜色"><a href="#文本颜色" class="headerlink" title="文本颜色"></a>文本颜色</h2><p>color属性定义颜色。</p>
+<h1 id="四、文本属性"><a href="#四、文本属性" class="headerlink" title="四、文本属性"></a>四、文本属性</h1><p>CSS Text(文本)属性可定义文本的外观，比如：颜色、对齐文本、装饰文本、文本缩进、行间距等。</p>
+<h2 id="1-文本颜色"><a href="#1-文本颜色" class="headerlink" title="1.文本颜色"></a>1.文本颜色</h2><p>color属性定义颜色。</p>
 <table>
 <thead>
 <tr>
@@ -536,7 +537,7 @@ div &#123;font-family: Arial, "Microsoft YaHei", "微软雅黑";&#125;<span aria
 </tr>
 </tbody></table>
 <p>开发常用PS吸管工具吸取十六进制颜色属性。</p>
-<h2 id="对齐文本"><a href="#对齐文本" class="headerlink" title="对齐文本"></a>对齐文本</h2><p>text-align属性设置<strong>水平</strong>对齐方式</p>
+<h2 id="2-对齐文本"><a href="#2-对齐文本" class="headerlink" title="2.对齐文本"></a>2.对齐文本</h2><p>text-align属性设置<strong>水平</strong>对齐方式</p>
 <table>
 <thead>
 <tr>
@@ -557,7 +558,7 @@ div &#123;font-family: Arial, "Microsoft YaHei", "微软雅黑";&#125;<span aria
 <td>居中对齐</td>
 </tr>
 </tbody></table>
-<h2 id="装饰文本"><a href="#装饰文本" class="headerlink" title="装饰文本"></a>装饰文本</h2><p>text-decoration属性添加下划线、删除线、上划线等。</p>
+<h2 id="3-装饰文本"><a href="#3-装饰文本" class="headerlink" title="3.装饰文本"></a>3.装饰文本</h2><p>text-decoration属性添加下划线、删除线、上划线等。</p>
 <table>
 <thead>
 <tr>
@@ -583,28 +584,30 @@ div &#123;font-family: Arial, "Microsoft YaHei", "微软雅黑";&#125;<span aria
 </tr>
 </tbody></table>
 <p>none常用于去除&lt;a&gt;链接的下划线。</p>
-<h2 id="文本缩进"><a href="#文本缩进" class="headerlink" title="文本缩进"></a>文本缩进</h2><p>text-indent属性指定文本的第一行的缩进。<br>属性值可以是：</p>
+<h2 id="4-文本缩进"><a href="#4-文本缩进" class="headerlink" title="4.文本缩进"></a>4.文本缩进</h2><p>text-indent属性指定文本的第一行的缩进。<br>属性值可以是：</p>
 <ul>
 <li>像素值，如 20px</li>
 <li>当前文字大小：如 2em</li>
 </ul>
 <p>em：相对于当前文字的文字大小。</p>
-<h2 id="行间距"><a href="#行间距" class="headerlink" title="行间距"></a>行间距</h2><p>line-height：像素值 px</p>
-<h1 id="CSS的引入方式"><a href="#CSS的引入方式" class="headerlink" title="CSS的引入方式"></a>CSS的引入方式</h1><p>按照CSS样式书写的位置或引入方式，CSS可以分为三大类：</p>
+<h2 id="5-行间距"><a href="#5-行间距" class="headerlink" title="5.行间距"></a>5.行间距</h2><p>line-height：像素值 px</p>
+<h1 id="五、CSS的引入方式"><a href="#五、CSS的引入方式" class="headerlink" title="五、CSS的引入方式"></a>五、CSS的引入方式</h1><p>按照CSS样式书写的位置或引入方式，CSS可以分为三大类：</p>
 <ol>
 <li>行内样式表（行内式）</li>
 <li>内部样式表（嵌入式）</li>
 <li>外部样式表（链接式）</li>
 </ol>
-<h2 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h2><p> 写道html页面内部、将所有的CSS代码抽取出来单独放到一个&lt;style&gt;标签中,不一定放到head里，理论上可以放到任意位置。</p>
-<h2 id="行内样式表"><a href="#行内样式表" class="headerlink" title="行内样式表"></a>行内样式表</h2><p> 在元素标签内部的style属性中设定CSS样式，适合修改简单模式<br> <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>行内样式表<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
-<h2 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h2><p>实施开发都是外部样式表，适合样式比较多的情况。核心是将样式单独写到CSS文件中，之后把CSS文件引入到HTML页面中使用。</p>
+<h2 id="1-内部样式表"><a href="#1-内部样式表" class="headerlink" title="1.内部样式表"></a>1.内部样式表</h2><p>写道html页面内部、将所有的CSS代码抽取出来单独放到一个&lt;style&gt;标签中,不一定放到head里，理论上可以放到任意位置。</p>
+<h2 id="2-行内样式表"><a href="#2-行内样式表" class="headerlink" title="2.行内样式表"></a>2.行内样式表</h2><p>在元素标签内部的style属性中设定CSS样式，适合修改简单模式</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>行内样式表<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="3-外部样式表"><a href="#3-外部样式表" class="headerlink" title="3.外部样式表"></a>3.外部样式表</h2><p>实施开发都是外部样式表，适合样式比较多的情况。核心是将样式单独写到CSS文件中，之后把CSS文件引入到HTML页面中使用。</p>
 <ol>
 <li>新建CSS文件，将所有CSS代码放入此文件</li>
 <li>在HTML中，head里用&lt;link&gt;标签引入这个文件<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>CSS文件路径<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 </ol>
-<h1 id="Emmet语法"><a href="#Emmet语法" class="headerlink" title="Emmet语法"></a>Emmet语法</h1><p>Emmet语法的前身是Zen coding，它使用缩写，来提高html&#x2F;css的编写速度，Vscode内部已经集成该语法</p>
-<h2 id="快速生成HTML结构语法"><a href="#快速生成HTML结构语法" class="headerlink" title="快速生成HTML结构语法"></a>快速生成HTML结构语法</h2><ol>
+<h1 id="六、Emmet语法"><a href="#六、Emmet语法" class="headerlink" title="六、Emmet语法"></a>六、Emmet语法</h1><p>Emmet语法的前身是Zen coding，它使用缩写，来提高html&#x2F;css的编写速度，Vscode内部已经集成该语法</p>
+<h2 id="1-快速生成HTML结构语法"><a href="#1-快速生成HTML结构语法" class="headerlink" title="1.快速生成HTML结构语法"></a>1.快速生成HTML结构语法</h2><ol>
 <li>生成标签，直接输入标签名，按tab键即可，比如div+tab</li>
 <li>生成多个相同标签，加上*数量即可，如div*4</li>
 <li>如果有父子级关系，可以用&gt;，如ul&gt;li就可以了</li>
@@ -614,32 +617,31 @@ div &#123;font-family: Arial, "Microsoft YaHei", "微软雅黑";&#125;<span aria
 <li>生成标签内容可以用{}，如p{p内容}+tab</li>
 </ol>
 <p>5和6如果没有指定标签，默认是div标签。</p>
-<h2 id="快速生成CSS样式语法"><a href="#快速生成CSS样式语法" class="headerlink" title="快速生成CSS样式语法"></a>快速生成CSS样式语法</h2><p>CSS基本采取简写首字母形式即可</p>
+<h2 id="2-快速生成CSS样式语法"><a href="#2-快速生成CSS样式语法" class="headerlink" title="2.快速生成CSS样式语法"></a>2.快速生成CSS样式语法</h2><p>CSS基本采取简写首字母形式即可</p>
 <p>如：w200+tab生成width: 200px；ih26+tab生成line-height: 26px</p>
-<h2 id="快速格式化代码"><a href="#快速格式化代码" class="headerlink" title="快速格式化代码"></a>快速格式化代码</h2><p>Alt+Shift+F快速格式化文档，实现代码格式自动调整。</p>
-<h1 id="CSS复合选择器"><a href="#CSS复合选择器" class="headerlink" title="CSS复合选择器"></a>CSS复合选择器</h1><p>复合选择器建立在基础选择器之上，对基础选择器进行组合形成的。</p>
+<h1 id="七、CSS复合选择器"><a href="#七、CSS复合选择器" class="headerlink" title="七、CSS复合选择器"></a>七、CSS复合选择器</h1><p>复合选择器建立在基础选择器之上，对基础选择器进行组合形成的。</p>
 <ul>
 <li>更准确、更高效的选择目标标签</li>
 <li>由两个或多个基础选择器，通过不同的方式组合而成的</li>
 <li>常用复合选择器有：后代选择器、子选择器、并集选择器、伪类选择器等</li>
 </ul>
-<h2 id="后代选择器（重要）"><a href="#后代选择器（重要）" class="headerlink" title="后代选择器（重要）"></a>后代选择器（重要）</h2><p>后代选择器又称为包含选择器，可以选择父元素里面子元素。其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔。当标签发生嵌套时，内层标签就成为外层标签的后代。</p>
+<h2 id="1-后代选择器（重要）"><a href="#1-后代选择器（重要）" class="headerlink" title="1.后代选择器（重要）"></a>1.后代选择器（重要）</h2><p>后代选择器又称为包含选择器，可以选择父元素里面子元素。其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔。当标签发生嵌套时，内层标签就成为外层标签的后代。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">ol li &#123;
     color: red;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>即可选择将ol内部的li设置为red，也可搭配class使用。</p>
-<h2 id="子选择器（重要）"><a href="#子选择器（重要）" class="headerlink" title="子选择器（重要）"></a>子选择器（重要）</h2><p>只能选择作为某一元素的最近一级子元素。<br>写法：元素1＞元素2{样式声明}</p>
+<h2 id="2-子选择器（重要）"><a href="#2-子选择器（重要）" class="headerlink" title="2.子选择器（重要）"></a>2.子选择器（重要）</h2><p>只能选择作为某一元素的最近一级子元素。<br>写法：元素1＞元素2{样式声明}</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">ol>li &#123;
     color: red;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>li内部的不会变化。</p>
-<h2 id="并集选择器（重要）"><a href="#并集选择器（重要）" class="headerlink" title="并集选择器（重要）"></a>并集选择器（重要）</h2><p>并集选择器可以选择多组标签，同时为他们定义相同的样式，通常用于集体声明。<br>写法：元素1, 元素2{样式声明}（通常一个元素名加，为一行）</p>
+<h2 id="3-并集选择器（重要）"><a href="#3-并集选择器（重要）" class="headerlink" title="3.并集选择器（重要）"></a>3.并集选择器（重要）</h2><p>并集选择器可以选择多组标签，同时为他们定义相同的样式，通常用于集体声明。<br>写法：元素1, 元素2{样式声明}（通常一个元素名加，为一行）</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">div, p&#123;
     color: red;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>元素可用后代选择器和子选择器代替</p>
-<h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>用于向某些选择器添加特殊的效果，比如给链接添加特殊喜爱过，或选择第1个，第n个元素。<br>用”:”表示，比如:hover（当鼠标经过的时候）、:first-child（第一个孩子）。<br>伪类选择器有很多，有链接伪类、结构伪类。</p>
-<h3 id="链接伪类"><a href="#链接伪类" class="headerlink" title="链接伪类"></a>链接伪类</h3><ul>
+<h2 id="4-伪类选择器"><a href="#4-伪类选择器" class="headerlink" title="4.伪类选择器"></a>4.伪类选择器</h2><p>用于向某些选择器添加特殊的效果，比如给链接添加特殊喜爱过，或选择第1个，第n个元素。<br>用”:”表示，比如:hover（当鼠标经过的时候）、:first-child（第一个孩子）。<br>伪类选择器有很多，有链接伪类、结构伪类。</p>
+<h3 id="1-链接伪类"><a href="#1-链接伪类" class="headerlink" title="(1)链接伪类"></a>(1)链接伪类</h3><ul>
 <li>a:link{样式声明}        &#x2F;<em>选择所有未被访问的链接</em>&#x2F;</li>
 <li>a:visited{样式声明}     &#x2F;<em>选择所有已被访问的链接</em>&#x2F;</li>
 <li>a:hover{样式声明}       &#x2F;<em>选择鼠标指针位于其上的链接</em>&#x2F;</li>
@@ -651,15 +653,77 @@ div &#123;font-family: Arial, "Microsoft YaHei", "微软雅黑";&#125;<span aria
     color: #333;
     text-decoration: none;
 &#125;
-:hover &#123;
+a:hover &#123;
     color: #369;
     text-decoration: underline;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="focus伪类选择器"><a href="#focus伪类选择器" class="headerlink" title=":focus伪类选择器"></a>:focus伪类选择器</h3><p>用于选取获得焦点（光标）的表单元素</p>
+<h3 id="2-focus伪类选择器"><a href="#2-focus伪类选择器" class="headerlink" title="(2):focus伪类选择器"></a>(2):focus伪类选择器</h3><p>用于选取获得焦点（光标）的表单元素</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">imput:focus &#123;
     background-color: yello;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="八、CSS的元素显示模式"><a href="#八、CSS的元素显示模式" class="headerlink" title="八、CSS的元素显示模式"></a>八、CSS的元素显示模式</h1><p>元素显示模式就是元素以什么方式进行显示，一般分为块元素和行内元素 </p>
+<h2 id="1-块元素"><a href="#1-块元素" class="headerlink" title="1.块元素"></a>1.块元素</h2><p>常见的块元素有<strong>h1~h6、p、div、ul、ol、li等</strong></p>
+<p>块元素的特点：</p>
+<ol>
+<li>独占一行</li>
+<li>高度、宽度、外边距以及内边距都可以控制</li>
+<li>宽度默认是容器（父级宽度）的100%</li>
+<li>里面可以放行内或者块级元素</li>
+</ol>
+<p>注：文字类元素内不能使用块级元素，如p和h1<br>~h6不能放其他块级元素</p>
+<h2 id="2-行内元素"><a href="#2-行内元素" class="headerlink" title="2.行内元素"></a>2.行内元素</h2><p>常见行内元素有<strong>a、strong、b、em、i、del、s、ins、u、span等</strong></p>
+<p>行内元素的特点：</p>
+<ol>
+<li>一行可以有多个</li>
+<li>高、宽直接设置无效</li>
+<li>默认宽度是它本身内容的宽度</li>
+<li>行内元素只能容纳文本或者其他行内元素</li>
+</ol>
+<p>注：链接里不能再放链接，特殊情况链接a里面可以放块级元素，但是给a转换一下块级模式最安全</p>
+<h2 id="3-行内块元素"><a href="#3-行内块元素" class="headerlink" title="3.行内块元素"></a>3.行内块元素</h2><p>行内元素有几个特殊的标签：<strong>img、input、td</strong>。它们同时具有块元素和行内元素的特点。</p>
+<p>行内块元素的特点：</p>
+<ol>
+<li>一行显示多个，与相邻行内元素在一行时有空隙</li>
+<li>默认宽度时内容本身的宽度</li>
+<li>高度、行高、外边距以及内边距都可以控制</li>
+</ol>
+<h2 id="4-元素显示模式转换"><a href="#4-元素显示模式转换" class="headerlink" title="4.元素显示模式转换"></a>4.元素显示模式转换</h2><ul>
+<li>行内元素转换为块元素：<strong>display:block</strong>;</li>
+<li>块元素转换为行内元素：<strong>display:inline</strong>;</li>
+<li>转换为行内块元素：<strong>display:inline-block</strong>;</li>
+</ul>
+<p>注：写在style中相应的元素CSS属性内</p>
+<h2 id="5-单行文字垂直居中"><a href="#5-单行文字垂直居中" class="headerlink" title="5.单行文字垂直居中"></a>5.单行文字垂直居中</h2><p>CSS没有文字垂直居中的代码，我们可以让<strong>文字的行高等于盒子的高度</strong></p>
+<h1 id="九、CSS的背景"><a href="#九、CSS的背景" class="headerlink" title="九、CSS的背景"></a>九、CSS的背景</h1><p>背景属性有：<strong>背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定等</strong></p>
+<h2 id="1-背景颜色"><a href="#1-背景颜色" class="headerlink" title="1.背景颜色"></a>1.背景颜色</h2><p>background-color属性定义元素的背景颜色<br>默认值是<strong>transparent</strong>（透明），也可以指定一种颜色</p>
+<h2 id="2-背景图片"><a href="#2-背景图片" class="headerlink" title="2.背景图片"></a>2.背景图片</h2><p>background-image属性描述了元素的背景图像，优点是便于控制位置<br>属性值有：none\url()定义</p>
+<h2 id="3-背景平铺"><a href="#3-背景平铺" class="headerlink" title="3.背景平铺"></a>3.背景平铺</h2><p>background-repeat属性设置背景照片平铺效果<br>属性值有：<strong>repeat&#x2F;no-repeat&#x2F;repeat-x&#x2F;repeat-y</strong><br>依次是：<strong>平铺&#x2F;不平铺&#x2F;沿着x轴平铺&#x2F;沿着y轴平铺</strong></p>
+<h2 id="4-背景图片位置"><a href="#4-背景图片位置" class="headerlink" title="4.背景图片位置"></a>4.背景图片位置</h2><p>background-position属性改变图片在背景中的位置<br>属性值有：<strong>x y</strong>;<br>x，y可以使用方位名词或者精确单位</p>
+<h3 id="1-方位名词"><a href="#1-方位名词" class="headerlink" title="(1)方位名词"></a>(1)方位名词</h3><ul>
+<li>方位名词有：<strong>top、center、bottom、left、right</strong></li>
+<li>如果只写了一个方位名词，第二个值默认居中对齐</li>
+<li>方位名词因为x和y不同，所以顺序可以颠倒</li>
+</ul>
+<h3 id="2-精确单位"><a href="#2-精确单位" class="headerlink" title="(2)精确单位"></a>(2)精确单位</h3><ul>
+<li>精确单位第一个一定是x坐标，第二个一定是y坐标</li>
+<li>如果只写了一个坐标，则是x坐标，y坐标默认居中对齐</li>
+</ul>
+<h3 id="3-混合单位"><a href="#3-混合单位" class="headerlink" title="(3)混合单位"></a>(3)混合单位</h3><ul>
+<li>精确单位和方位名词可以混合使用，但第一个一定是x坐标，第二个值一定是y坐标</li>
+</ul>
+<h2 id="5-背景图像固定"><a href="#5-背景图像固定" class="headerlink" title="5.背景图像固定"></a>5.背景图像固定</h2><p>background-attachment属性设置背景图像是否固定或者随着页面的其余部分滚动<br>属性值有：<strong>scroll&#x2F;fixed</strong><br>依次为：<strong>随着内容滚动&#x2F;固定</strong></p>
+<h2 id="6-背景符合写法"><a href="#6-背景符合写法" class="headerlink" title="6.背景符合写法"></a>6.背景符合写法</h2><p>为了简化背景属性的代码，我们可以将这些属性合并简写在同一个属性background中，从而节约代码量<br>没有特定的书写顺序，一般习惯约定顺序为：<br>background：<strong>背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置</strong></p>
+<h2 id="7-背景色半透明"><a href="#7-背景色半透明" class="headerlink" title="7.背景色半透明"></a>7.背景色半透明</h2><p>CSS3为我们提供了颜色半透明的效果</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">background: rgba(0, 0, 0, 0.3)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ul>
+<li>rgba：红，绿，蓝，透明度（alpha）</li>
+<li>透明度取值范围在0~1之间,可简写为.3</li>
+<li>背景半透明指盒子半透明，盒子里面的内容不受影响</li>
+<li>CSS3新增属性，是IE9+版本浏览器才支持（实际开发不考虑兼容性）</li>
+</ul>
+
                 
             </div>
             <hr/>

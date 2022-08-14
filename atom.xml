@@ -6,7 +6,7 @@
   <link href="https://marshver.github.io/atom.xml" rel="self"/>
   
   <link href="https://marshver.github.io/"/>
-  <updated>2022-08-10T15:02:42.101Z</updated>
+  <updated>2022-08-14T14:19:07.076Z</updated>
   <id>https://marshver.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://marshver.github.io/2022/08/07/css-xue-xi-bi-ji/"/>
     <id>https://marshver.github.io/2022/08/07/css-xue-xi-bi-ji/</id>
     <published>2022-08-07T13:42:36.000Z</published>
-    <updated>2022-08-10T15:02:42.101Z</updated>
+    <updated>2022-08-14T14:19:07.076Z</updated>
     
     
       
@@ -29,7 +29,8 @@
         
         
     <summary type="html">&lt;p&gt;CSS是层叠样式表的简称，主要用于设置HTML页面中的文本内容，图片的外形以及版面的布局和外观显示样式。&lt;/p&gt;
-&lt;h1 id=&quot;CSS语法规范&quot;&gt;&lt;a href=&quot;#CSS语法规范&quot; class=&quot;headerlink&quot;</summary>
+&lt;p&gt;注：Alt+Shift+F快速格式化文档，实现代码格式自动调整。&lt;/p&gt;
+&lt;h1 id=&quot;一、CSS语法规范&quot;&gt;&lt;a href=&quot;#一、CSS语法规范&quot;</summary>
         
       
     
@@ -70,7 +71,7 @@
     <link href="https://marshver.github.io/2022/07/27/html-xue-xi-xin-de/"/>
     <id>https://marshver.github.io/2022/07/27/html-xue-xi-xin-de/</id>
     <published>2022-07-27T14:01:45.000Z</published>
-    <updated>2022-08-07T15:47:36.821Z</updated>
+    <updated>2022-08-14T13:52:59.719Z</updated>
     
     
       
@@ -78,7 +79,7 @@
         
         
     <summary type="html">&lt;p&gt;注：vscode添加注释用Alt+Shift+A注释所选内容，ctrl+&amp;#x2F;注释所选整行。&lt;/p&gt;
-&lt;h1 id=&quot;Web标准的构成&quot;&gt;&lt;a href=&quot;#Web标准的构成&quot; class=&quot;headerlink&quot;</summary>
+&lt;h1 id=&quot;一、Web标准的构成&quot;&gt;&lt;a href=&quot;#一、Web标准的构成&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -119,7 +120,7 @@
     <link href="https://marshver.github.io/2022/07/03/bo-ke-chu-xian-de-wen-ti/"/>
     <id>https://marshver.github.io/2022/07/03/bo-ke-chu-xian-de-wen-ti/</id>
     <published>2022-07-03T08:02:15.000Z</published>
-    <updated>2022-08-13T03:09:59.038Z</updated>
+    <updated>2022-08-14T13:49:27.799Z</updated>
     
     
       
