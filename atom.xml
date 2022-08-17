@@ -6,7 +6,7 @@
   <link href="https://marshver.github.io/atom.xml" rel="self"/>
   
   <link href="https://marshver.github.io/"/>
-  <updated>2022-08-14T14:19:07.076Z</updated>
+  <updated>2022-08-17T12:22:36.437Z</updated>
   <id>https://marshver.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux学习笔记</title>
+    <link href="https://marshver.github.io/2022/08/17/linux-xue-xi-bi-ji/"/>
+    <id>https://marshver.github.io/2022/08/17/linux-xue-xi-bi-ji/</id>
+    <published>2022-08-17T10:22:04.000Z</published>
+    <updated>2022-08-17T12:22:36.437Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、下载VMware和Centos&quot;&gt;&lt;a href=&quot;#一、下载VMware和Centos&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://marshver.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS学习笔记</title>
@@ -48,7 +71,7 @@
     <link href="https://marshver.github.io/2022/08/04/dian-nao-bi-zhuang-ruan-jian-he-ji/"/>
     <id>https://marshver.github.io/2022/08/04/dian-nao-bi-zhuang-ruan-jian-he-ji/</id>
     <published>2022-08-04T14:05:55.000Z</published>
-    <updated>2022-08-12T15:34:23.160Z</updated>
+    <updated>2022-08-17T10:23:43.988Z</updated>
     
     
       
@@ -97,7 +120,7 @@
     <link href="https://marshver.github.io/2022/07/05/vscode-zhong-c-he-c-de-huan-jing-pei-zhi/"/>
     <id>https://marshver.github.io/2022/07/05/vscode-zhong-c-he-c-de-huan-jing-pei-zhi/</id>
     <published>2022-07-05T02:22:25.000Z</published>
-    <updated>2022-08-05T15:38:28.458Z</updated>
+    <updated>2022-08-17T10:23:46.197Z</updated>
     
     
       
@@ -120,7 +143,7 @@
     <link href="https://marshver.github.io/2022/07/03/bo-ke-chu-xian-de-wen-ti/"/>
     <id>https://marshver.github.io/2022/07/03/bo-ke-chu-xian-de-wen-ti/</id>
     <published>2022-07-03T08:02:15.000Z</published>
-    <updated>2022-08-14T13:49:27.799Z</updated>
+    <updated>2022-08-17T10:23:49.287Z</updated>
     
     
       
@@ -144,7 +167,7 @@
     <link href="https://marshver.github.io/2022/07/01/bo-ke-xiang-guan/"/>
     <id>https://marshver.github.io/2022/07/01/bo-ke-xiang-guan/</id>
     <published>2022-07-01T07:27:42.000Z</published>
-    <updated>2022-08-05T15:37:19.300Z</updated>
+    <updated>2022-08-17T10:23:47.880Z</updated>
     
     
       

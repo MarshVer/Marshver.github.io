@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>linux学习笔记</title>
+      <link href="/2022/08/17/linux-xue-xi-bi-ji/"/>
+      <url>/2022/08/17/linux-xue-xi-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、下载VMware和Centos"><a href="#一、下载VMware和Centos" class="headerlink" title="一、下载VMware和Centos"></a>一、下载VMware和Centos</h1><p>VMware16：<a href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html</a><br>VMware16密钥：<br>ZF3R0-FHED2-M80TY-8QYGC-NPKYF<br>YF390-0HF8P-M81RQ-2DXQE-M2UT6<br>ZF71R-DMX85-08DQY-8YMNC-PPHV8</p><p>Centos7-DVD：<a href="http://mirrors.aliyun.com/centos/7/isos/x86_64/">http://mirrors.aliyun.com/centos/7/isos/x86_64/</a></p><h1 id="二、创建虚拟机并导入Centos"><a href="#二、创建虚拟机并导入Centos" class="headerlink" title="二、创建虚拟机并导入Centos"></a>二、创建虚拟机并导入Centos</h1><ol><li><p>典型-稍后安装操作系统</p></li><li><p>选择客户机操作系统为红帽7：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/RoBmZ4x6Qg7I3yf.png"></p></li><li><p>命名虚拟机名称-选择安装位置-20G、拆分成多个文件-自定义硬件</p></li><li><p>自定义硬件只需根据自己的CPU选择合适的处理器数量和内核数量就行</p></li></ol><p>打开任务管理器-性能，选择资源监视器：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/zGWJsqkhVciKAQa.png"></p><p>处理器全给，核数给一半：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/o4O1PKuCMbgFzIS.png"></p><ol start="5"><li><p>最后编辑虚拟机设置，将CD&#x2F;DVD指向ISO映像文件：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/8mqIZHfFgWLoYeR.png"></p></li><li><p>打开虚拟机install Centos，选择简体中文，选择软件选择：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/6fBGa43RsV2vC9K.png"></p></li><li><p>选择安装目标位置，我要配置分区。<br>一般将linux分成三个区：&#x2F;boot分区（引导分区），swap分区（交换分区），&#x2F;（根分区）<br>&#x2F;boot：1G；swap：与运存大小一致，2G；根分区（&#x2F;）：剩余内存，17G<br>设备类型：标准分区<br>文件系统选择：ext4，swap，ext4</p></li><li><p>KDUMP实际运行开启，学习可关闭节约内存</p></li><li><p>选择网络和主机名，启用并修改主机名即可完成</p></li><li><p>开始安装，设置root密码（实际密码应较为复杂为好：<a href="https://suijimimashengcheng.bmcx.com/">https://suijimimashengcheng.bmcx.com/</a> ）并创建用户</p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS学习笔记</title>
       <link href="/2022/08/07/css-xue-xi-bi-ji/"/>
       <url>/2022/08/07/css-xue-xi-bi-ji/</url>
@@ -107,7 +126,7 @@
       <link href="/2022/07/01/bo-ke-xiang-guan/"/>
       <url>/2022/07/01/bo-ke-xiang-guan/</url>
       
-        <content type="html"><![CDATA[<h1 id="个人备份习惯"><a href="#个人备份习惯" class="headerlink" title="个人备份习惯"></a>个人备份习惯</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><span class="token function">git</span> commit -m <span class="token string">"Backup"</span><span class="token function">git</span> pushhexo ghexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h1 id="恢复博客"><a href="#恢复博客" class="headerlink" title="恢复博客"></a>恢复博客</h1><p>安装git、nodejs、hexo等等。。然后克隆项目到本地<br>输入下列命令克隆博客必须文件(hexo分支)</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/marshver/marshver.github.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在clone下来的那个文件夹里面执行</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-cli<span class="token function">npm</span> <span class="token function">install</span><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>最后可以执行如下代码就可以开始你的博客了</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo cleanhexo ghexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="个人备份习惯"><a href="#个人备份习惯" class="headerlink" title="个人备份习惯"></a>个人备份习惯</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clhexo ghexo d<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><span class="token function">git</span> commit -m <span class="token string">"Backup"</span><span class="token function">git</span> push<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>前三个用于上传.deploy_git到github的main；<br>后三个用于上传整个源文件夹到github的branch</p><h1 id="恢复博客"><a href="#恢复博客" class="headerlink" title="恢复博客"></a>恢复博客</h1><p>安装git、nodejs、hexo等等。。然后克隆项目到本地<br>输入下列命令克隆博客必须文件(hexo分支)</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/marshver/marshver.github.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在clone下来的那个文件夹里面执行</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-cli<span class="token function">npm</span> <span class="token function">install</span><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>最后可以执行如下代码就可以开始你的博客了</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clhexo ghexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       
