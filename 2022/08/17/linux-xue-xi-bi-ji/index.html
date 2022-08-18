@@ -411,14 +411,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-17
+                    2022-08-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    340
+                    678
                 </div>
                 
 
@@ -465,6 +465,21 @@
 </li>
 <li><p>开始安装，设置root密码（实际密码应较为复杂为好：<a target="_blank" rel="noopener" href="https://suijimimashengcheng.bmcx.com/">https://suijimimashengcheng.bmcx.com/</a> ）并创建用户</p>
 </li>
+</ol>
+<h1 id="三、网络连接的三种模式"><a href="#三、网络连接的三种模式" class="headerlink" title="三、网络连接的三种模式"></a>三、网络连接的三种模式</h1><ol>
+<li>桥接模式：虚拟机网络地址和主机属于同一网段，可以与外部系统通讯，但是容易造成IP冲突</li>
+<li><strong>NAT模式</strong>：网络地址转换，可以与外部系统通讯（以主机地址为代理发送和接受信息），不容易造成IP冲突</li>
+<li>主机模式：独立系统，不予外部系统通讯</li>
+</ol>
+<h1 id="四、安装vmtools"><a href="#四、安装vmtools" class="headerlink" title="四、安装vmtools"></a>四、安装vmtools</h1><p>VMtools通过主机建立文件夹再用虚拟机的共享文件夹与其链接，实现主机和虚拟机系统的共享操作。</p>
+<ol>
+<li>进入centos（root登录）</li>
+<li>虚拟机菜单重新安装vmtools</li>
+<li>打开光驱文件复制压缩包到<strong>主文件夹-其他位置-计算机-opt</strong>文件下</li>
+<li>使用解压命令 tar，得到一个安装文件<br>cd &#x2F;opt (进入opt目录)<br>tar -zxvf VMwareTools-10.3.23-16594550.tar.gz(解压文件，可输入tar -zxvf VM+tab快速识别文件名，下面的操作同理，需要注意大小写)</li>
+<li>进入VM解压的目录<br>cd vmware-tools-distrib&#x2F;<br>ls</li>
+<li>安装VMstolls<br>.&#x2F;vmware-install.pl<br>一直确定即可</li>
+<li>主机建立文件夹（myshare），虚拟机系统设置-选项，启用共享文件夹并设置位置为myshare的位置，myshare将出现在<strong>主文件夹-其他位置-计算机-mnt-hgfs</strong>的文件夹里</li>
 </ol>
 
                 
