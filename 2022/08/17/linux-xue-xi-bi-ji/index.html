@@ -392,6 +392,10 @@
                                 <span class="chip bg-color">学习笔记</span>
                             </a>
                         
+                            <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                                <span class="chip bg-color">后端</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -411,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-18
+                    2022-08-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    678
+                    1.5k
                 </div>
                 
 
@@ -480,6 +484,109 @@
 <li>进入VM解压的目录<br>cd vmware-tools-distrib&#x2F;<br>ls</li>
 <li>安装VMstolls<br>.&#x2F;vmware-install.pl<br>一直确定即可</li>
 <li>主机建立文件夹（myshare），虚拟机系统设置-选项，启用共享文件夹并设置位置为myshare的位置，myshare将出现在<strong>主文件夹-其他位置-计算机-mnt-hgfs</strong>的文件夹里</li>
+</ol>
+<h1 id="五、linux目录结构"><a href="#五、linux目录结构" class="headerlink" title="五、linux目录结构"></a>五、linux目录结构</h1><p>linux一切皆文件</p>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>存放的内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>&#x2F;bin</strong>（&#x2F;usr&#x2F;bin,&#x2F;usr&#x2F;local&#x2F;bin）</td>
+<td>经常使用的指令（binary）</td>
+</tr>
+<tr>
+<td><strong>&#x2F;sbin</strong> (&#x2F;usr&#x2F;sbin,&#x2F;usr&#x2F;local&#x2F;sbin)</td>
+<td>系统管理员使用的指令（super binary）</td>
+</tr>
+<tr>
+<td><strong>&#x2F;home</strong></td>
+<td>存放普通用户的主目录，目录名是用户的账号名</td>
+</tr>
+<tr>
+<td><strong>&#x2F;root</strong></td>
+<td>系统管理员的用户主目录</td>
+</tr>
+<tr>
+<td><strong>&#x2F;etc</strong></td>
+<td>系统管理所需要的配置文件和子目录my.conf</td>
+</tr>
+<tr>
+<td><strong>&#x2F;usr</strong></td>
+<td>用户的很多应用程序和文件都放在这个目录下，类似于Windows下的program files目录</td>
+</tr>
+<tr>
+<td><strong>&#x2F;boot</strong></td>
+<td>linux系统启动的核心文件，包括链接文件和镜像文件</td>
+</tr>
+<tr>
+<td><strong>&#x2F;media</strong></td>
+<td>linux自动识别一些设备，例如U盘，光驱等，当识别后，linux会把识别的设备挂载到这个目录下</td>
+</tr>
+<tr>
+<td><strong>&#x2F;mnt</strong></td>
+<td>系统提供该目录为了让用户临时挂载别的文件系统，我们可以将外露的存储挂载在&#x2F;,mt&#x2F;上，然后进入该目录就可以查看里的内容了。d:&#x2F;myshar</td>
+</tr>
+<tr>
+<td><strong>&#x2F;usr&#x2F;local</strong></td>
+<td>给主机额外安装软件所安装的目录，一般通过编译源码方式安装的程序</td>
+</tr>
+<tr>
+<td><strong>&#x2F;var</strong></td>
+<td>存放着不断扩充者的东西，习惯将经常被修改的目录放在这个目录下。包括各种日志文件</td>
+</tr>
+<tr>
+<td>&#x2F;opt</td>
+<td>给之际额外<strong>安装软件</strong>所摆放的目录，默认为空（安装包）</td>
+</tr>
+<tr>
+<td>&#x2F;lib</td>
+<td>系统开机所需的最基本的动态连接共享库，作用类似于Windows里的DLL文件，几乎所有的应用程序都需要这些共享库</td>
+</tr>
+<tr>
+<td>&#x2F;lost+found</td>
+<td>一般情况下是空的，系统非法关机后会生成一些文件</td>
+</tr>
+<tr>
+<td>&#x2F;tmp</td>
+<td>存放临时文件</td>
+</tr>
+<tr>
+<td>&#x2F;dev</td>
+<td>类似于windows的设备管理器，把所有硬件用文件的形式存储</td>
+</tr>
+<tr>
+<td>&#x2F;selinux</td>
+<td>[security-enhanced linux]安全子系统，它能控制程序只能访问特定文件，有三种工作模式，可以自行设置</td>
+</tr>
+<tr>
+<td><em>&#x2F;proc（不能动）</em></td>
+<td>虚拟的目录，存放系统内存的映射，访问这个目录获取系统信息</td>
+</tr>
+<tr>
+<td><em>&#x2F;srv（不能动）</em></td>
+<td>服务启动之后需要提取的数据</td>
+</tr>
+<tr>
+<td><em>&#x2F;sys（不能动）</em></td>
+<td>这是linux2.6内核的一个很大的变化。该目录下安装了2.6内核中新出现的一个文件系统sysfs</td>
+</tr>
+</tbody></table>
+<h1 id="六、远程登陆linux和传送文件"><a href="#六、远程登陆linux和传送文件" class="headerlink" title="六、远程登陆linux和传送文件"></a>六、远程登陆linux和传送文件</h1><h2 id="1-下载Xshell和Xftp"><a href="#1-下载Xshell和Xftp" class="headerlink" title="1.下载Xshell和Xftp"></a>1.下载Xshell和Xftp</h2><p>官网：<a target="_blank" rel="noopener" href="https://www.xshell.com/zh/free-for-home-school/">https://www.xshell.com/zh/free-for-home-school/</a> 下载两者<br>百度网盘下载链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1t-XCh7OYZhPgYX1GHQJanA?pwd=1111">https://pan.baidu.com/s/1t-XCh7OYZhPgYX1GHQJanA?pwd=1111</a> </p>
+<h2 id="2-查询linux系统ip地址"><a href="#2-查询linux系统ip地址" class="headerlink" title="2.查询linux系统ip地址"></a>2.查询linux系统ip地址</h2><p>进入linux终端，输入ifconfig<br>ens33中的inet后面的就是IP地址，如：192.168.232.128</p>
+<h2 id="3-远程登录linux"><a href="#3-远程登录linux" class="headerlink" title="3.远程登录linux"></a>3.远程登录linux</h2><ol>
+<li>打开Xshell</li>
+<li>新建，名称随意，协议是ssh，主机设为IP地址，端口22-确定</li>
+<li>双击会话，接受并保存，输入root和密码</li>
+</ol>
+<h2 id="4-建立文件传输"><a href="#4-建立文件传输" class="headerlink" title="4.建立文件传输"></a>4.建立文件传输</h2><ol>
+<li>打开Xftp</li>
+<li>如3类似新建，协议是SFTP，端口22</li>
+<li>双击会话，输入root和密码</li>
+<li>如文件出现乱码，选择左上角&gt;文件&gt;当前会话属性&gt;选项&gt;编码换成utf-8</li>
+<li>Xftp左大块是windows文件，又大块是linux文件</li>
 </ol>
 
                 
@@ -547,6 +654,10 @@
                             
                                 <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                                     <span class="chip bg-color">学习笔记</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                                    <span class="chip bg-color">后端</span>
                                 </a>
                             
                         </div>
