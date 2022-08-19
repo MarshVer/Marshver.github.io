@@ -6,7 +6,7 @@
   <link href="https://marshver.github.io/atom.xml" rel="self"/>
   
   <link href="https://marshver.github.io/"/>
-  <updated>2022-08-18T14:21:03.251Z</updated>
+  <updated>2022-08-19T06:50:59.276Z</updated>
   <id>https://marshver.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>申请免费域名并绑定Cloudflare</title>
+    <link href="https://marshver.github.io/2022/08/19/shen-qing-mian-fei-yu-ming/"/>
+    <id>https://marshver.github.io/2022/08/19/shen-qing-mian-fei-yu-ming/</id>
+    <published>2022-08-19T06:11:29.000Z</published>
+    <updated>2022-08-19T06:50:59.276Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;注：这种方法申请的域名无法备案。&lt;/p&gt;
+&lt;h1 id=&quot;一、注册并申请域名&quot;&gt;&lt;a href=&quot;#一、注册并申请域名&quot; class=&quot;headerlink&quot; title=&quot;一、注册并申请域名&quot;&gt;&lt;/a&gt;一、注册并申请域名&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;进入官网：&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="博客" scheme="https://marshver.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>linux学习笔记</title>
