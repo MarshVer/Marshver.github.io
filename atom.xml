@@ -6,7 +6,7 @@
   <link href="https://marshver.github.io/atom.xml" rel="self"/>
   
   <link href="https://marshver.github.io/"/>
-  <updated>2022-08-19T07:27:35.238Z</updated>
+  <updated>2022-08-20T05:32:08.485Z</updated>
   <id>https://marshver.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>word使用技巧</title>
+    <link href="https://marshver.github.io/2022/08/20/word-shi-yong-ji-qiao/"/>
+    <id>https://marshver.github.io/2022/08/20/word-shi-yong-ji-qiao/</id>
+    <published>2022-08-20T05:30:31.000Z</published>
+    <updated>2022-08-20T05:32:08.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在正方形里打勾&quot;&gt;&lt;a href=&quot;#在正方形里打勾&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://marshver.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>申请免费域名并绑定Cloudflare</title>
