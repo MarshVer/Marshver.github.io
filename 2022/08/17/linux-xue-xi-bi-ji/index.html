@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-19
+                    2022-08-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.8k
                 </div>
                 
 
@@ -588,6 +588,28 @@
 <li>如文件出现乱码，选择左上角&gt;文件&gt;当前会话属性&gt;选项&gt;编码换成utf-8</li>
 <li>Xftp左大块是windows文件，又大块是linux文件</li>
 </ol>
+<h1 id="七、Vi和Vim"><a href="#七、Vi和Vim" class="headerlink" title="七、Vi和Vim"></a>七、Vi和Vim</h1><h2 id="1-Vi和Vim常用的三种模式"><a href="#1-Vi和Vim常用的三种模式" class="headerlink" title="1.Vi和Vim常用的三种模式"></a>1.Vi和Vim常用的三种模式</h2><p>终端vim+文件名（如hello.java）进入vim编辑。</p>
+<ul>
+<li>正常模式（默认）<br>[上下左右]移动光标，[删除字符]或[删除整行]处理文档，[复制、粘贴]处理数据</li>
+<li>插入模式<br>按下i&#x2F;I、o&#x2F;O、a&#x2F;A、r&#x2F;R等任何一个字母进入<strong>编辑模式</strong>，一般按<strong>i</strong>（insert）即可</li>
+<li>命令行模式<br>输入ESC，再输入“:”，这个模式提供你相关指令，完成读取、存盘、替换、离开vim、显示行号等的动作。</li>
+</ul>
+<p>命令行模式三种退出方式：</p>
+<ol>
+<li>:wq(保存退出)</li>
+<li>:q(退出不保存)</li>
+<li>:q!(强制退出，不保存)</li>
+</ol>
+<h2 id="2-Vi和Vim常用的快捷键"><a href="#2-Vi和Vim常用的快捷键" class="headerlink" title="2.Vi和Vim常用的快捷键"></a>2.Vi和Vim常用的快捷键</h2><ul>
+<li>拷贝当前行(yy)；拷贝当前向下3行(3yy)；粘贴(p)</li>
+<li>删除当前行(dd)；删除当前向下3行(3dd)</li>
+<li>查找某个单词[<strong>命令行下</strong> &#x2F;关键字]，回车查找，输入n是查找下一个</li>
+<li>显示&#x2F;撤销行号[命令行下 :set nu&#x2F;nonu]</li>
+<li>编辑文件，使用快捷键到该文档的最末行(G)和最首行(gg)</li>
+<li>撤销动作(u)</li>
+<li>编辑文件。将光标移动到20行(20+shift+g)</li>
+<li>…更多的可以查看文档</li>
+</ul>
 
                 
             </div>
