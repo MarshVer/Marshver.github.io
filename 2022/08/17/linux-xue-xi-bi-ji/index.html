@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-24
+                    2022-08-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.8k
+                    2k
                 </div>
                 
 
@@ -442,7 +442,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、下载VMware和Centos"><a href="#一、下载VMware和Centos" class="headerlink" title="一、下载VMware和Centos"></a>一、下载VMware和Centos</h1><p>VMware16：<a target="_blank" rel="noopener" href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html</a><br>VMware16密钥：<br>ZF3R0-FHED2-M80TY-8QYGC-NPKYF<br>YF390-0HF8P-M81RQ-2DXQE-M2UT6<br>ZF71R-DMX85-08DQY-8YMNC-PPHV8</p>
+                <h1 id="一、下载VMware和Centos"><a href="#一、下载VMware和Centos" class="headerlink" title="一、下载VMware和Centos"></a>一、下载VMware和Centos</h1><blockquote>
+<p>VMware16：<a target="_blank" rel="noopener" href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html</a></p>
+<blockquote>
+<p>VMware16密钥：<br>ZF3R0-FHED2-M80TY-8QYGC-NPKYF<br>YF390-0HF8P-M81RQ-2DXQE-M2UT6<br>ZF71R-DMX85-08DQY-8YMNC-PPHV8</p>
+</blockquote>
+</blockquote>
 <p>Centos7-DVD：<a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/centos/7/isos/x86_64/">http://mirrors.aliyun.com/centos/7/isos/x86_64/</a></p>
 <h1 id="二、创建虚拟机并导入Centos"><a href="#二、创建虚拟机并导入Centos" class="headerlink" title="二、创建虚拟机并导入Centos"></a>二、创建虚拟机并导入Centos</h1><ol>
 <li><p>典型-稍后安装操作系统</p>
@@ -609,6 +614,55 @@
 <li>撤销动作(u)</li>
 <li>编辑文件。将光标移动到20行(20+shift+g)</li>
 <li>…更多的可以查看文档</li>
+</ul>
+<h1 id="八、一些指令"><a href="#八、一些指令" class="headerlink" title="八、一些指令"></a>八、一些指令</h1><h2 id="关机和重启命令"><a href="#关机和重启命令" class="headerlink" title="关机和重启命令"></a>关机和重启命令</h2><table>
+<thead>
+<tr>
+<th align="center">指令</th>
+<th align="center">指令说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">shutdown -h now</td>
+<td align="center">立刻关机</td>
+</tr>
+<tr>
+<td align="center">shutdown -h 1</td>
+<td align="center">1分钟后关机</td>
+</tr>
+<tr>
+<td align="center">shutdown</td>
+<td align="center">默认1分钟后关机</td>
+</tr>
+<tr>
+<td align="center">shutdown -r now</td>
+<td align="center">立即重启</td>
+</tr>
+<tr>
+<td align="center">halt</td>
+<td align="center">立即关机</td>
+</tr>
+<tr>
+<td align="center">reboot</td>
+<td align="center">立即重启</td>
+</tr>
+<tr>
+<td align="center">sync</td>
+<td align="center">内存数据同步到磁盘</td>
+</tr>
+</tbody></table>
+<p>注：</p>
+<ul>
+<li>重启和关机前，首先要运行sync，把内存同步到磁盘</li>
+<li>目前的重启和关机指令已经在关机前进行了sync，但最好还是要运行一次sync</li>
+</ul>
+<h2 id="用户登录和注销"><a href="#用户登录和注销" class="headerlink" title="用户登录和注销"></a>用户登录和注销</h2><ul>
+<li>尽量少用root登录，普通用户输入“<strong>su - root</strong>”切换到root用户，或者“<strong>su - 用户名</strong>”切换到其他用户(切换用户后可用logout返回原来的用户)</li>
+<li>提示符下输入logout即可注销用户</li>
+</ul>
+<p>注：</p>
+<ul>
+<li>logout注销指令在图形运行级别无效，在 运行级别3下有效</li>
 </ul>
 
                 
