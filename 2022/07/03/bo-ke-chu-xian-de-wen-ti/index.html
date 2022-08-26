@@ -418,7 +418,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    1.9k
                 </div>
                 
 
@@ -485,54 +485,12 @@
 <p>我们可以把博客的静态文件部署到其他服务器上来加快速度，例如腾讯云或者阿里云，但国内的服务器大多要钱，而且还需要一个已备案域名来绑定。（腾讯云有个webify服务可以实现类似的功能，价格也不贵，按量计费，访问少的博客一天才几分钱。但是它默认的域名太长，不便于记忆，如果你有一个已备案的域名，且不介意这一点钱可以使用腾讯云的webify，并且在项目设置里绑定你的域名）。</p>
 <p>白嫖党的我选择使用境外的Vercel或者netlify的免费服务器来加速。（vercel的速度好像比netlify的要快，强推）但毕竟是国外的，访问速度依旧没有国内的服务器块，而且可能偶尔会抽风，但对于个人博客够用了,下面介绍如何使用Vercel部署静态博客。</p>
 <ol>
-<li><p>首先进入Vercel的官网：<a target="_blank" rel="noopener" href="https://vercel.com/">https://vercel.com/</a></p>
-</li>
-<li><p>Continue with Github使用Github授权并登录。点击New Porject，选择Browse All Templates选择你的博客框架，我的是hexo，然后选择Import Git Repository，授权博客文件的仓库，然后点击确定即可。settings中设置Your Username，则你的域名为Your Username.vercel.app。（是不是很好记！）</p>
-</li>
-<li><p>后续也可以通过把域名绑定到Cloudflare，使用Cloudflare的DNS加速，便可以使用vercel自定义域名加速访问。详细步骤见：<a href="/2022/08/19/shen-qing-mian-fei-yu-ming/" title="申请免费域名并绑定Cloudflare">申请免费域名并绑定Cloudflare</a></p>
-</li>
+<li>首先进入Vercel的官网：<a target="_blank" rel="noopener" href="https://vercel.com/">https://vercel.com/</a></li>
+<li>将GitHub博客仓库的默认分支改为main（非源文件）（因为源文件导入vercel可能会运行错误）</li>
+<li>Continue with Github使用Github授权并登录。点击New Porject，选择Browse All Templates选择你的博客框架，我的是hexo，然后选择Import Git Repository，授权博客文件的仓库，然后点击确定即可。settings中设置Your Username，则你的域名为Your Username.vercel.app。（是不是很好记！）</li>
+<li>后续也可以通过把域名绑定到Cloudflare，使用Cloudflare的DNS加速，便可以使用vercel自定义域名加速访问。详细步骤见：<a href="/2022/08/19/shen-qing-mian-fei-yu-ming/" title="申请免费域名并绑定Cloudflare">申请免费域名并绑定Cloudflare</a></li>
 </ol>
 <p><strong>注</strong>：记得查看新建项目的view domains，左侧git项，Production Branch是博客源文件的分支（我的是source），不是hexo d生成的网页文件，是博客的源文件（包含主题和一些配置文件，其他服务器也是一样），不是的话记得修改，不然会报错。<strong>服务器的内容需要git push过一会才能生效。</strong></p>
-<h2 id="3-静态文件压缩"><a href="#3-静态文件压缩" class="headerlink" title="3.静态文件压缩"></a>3.静态文件压缩</h2><p>hexo-all-minifier这款工具兼顾了hexo-neat的易用性，和gulp的功能</p>
-<p>安装：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token function">install</span> hexo-all-minifier --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>在博客根目录_config.yml里添加：</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># 静态文件压缩</span>
-  <span class="token key atrule">all_minifier</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-
-<span class="token comment">## html压缩</span>
-<span class="token key atrule">html_minifier</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">ignore_error</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-  <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
-<span class="token comment">## css压缩</span>
-<span class="token key atrule">css_minifier</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
-    <span class="token punctuation">-</span> <span class="token string">'*.min.css'</span>
-<span class="token comment">## js压缩</span>
-<span class="token key atrule">js_minifier</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">mangle</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">compress</span><span class="token punctuation">:</span>
-  <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
-    <span class="token punctuation">-</span> <span class="token string">'*.min.js'</span>
-<span class="token comment">## js连接器</span>
-<span class="token key atrule">js_concator</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-  <span class="token key atrule">bundle_path</span><span class="token punctuation">:</span> <span class="token string">'/js/bundle.js'</span>
-  <span class="token key atrule">front</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-  <span class="token key atrule">silent</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-<span class="token comment">## 图片压缩</span>
-<span class="token key atrule">image_minifier</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">interlaced</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-  <span class="token key atrule">multipass</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-  <span class="token key atrule">optimizationLevel</span><span class="token punctuation">:</span> <span class="token number">2</span>
-  <span class="token key atrule">pngquant</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-  <span class="token key atrule">progressive</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <h1 id="代码块显示异常"><a href="#代码块显示异常" class="headerlink" title="代码块显示异常"></a>代码块显示异常</h1><p>代码块“{}”显示乱码，卸载hexo-prism-plugin，删除配置。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> uninstall hexo-prism-plugin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>用hexo自带的PrismJS,效果一样。</p>
@@ -549,7 +507,7 @@
 <h1 id="更改hexo-d的分支"><a href="#更改hexo-d的分支" class="headerlink" title="更改hexo d的分支"></a>更改hexo d的分支</h1><p>由于github将默认分支master改为了main，而hexo-deployer-git插件没有改，所以就算你改了_config.yml的默认分支为main，hexo d后依然会创建一个master指向main，main会有一定延迟接受master分支，所以我们要将hexo-deployer-git插件你指向的master全部改为main</p>
 <h2 id="1-修改hexo-deployer-git插件"><a href="#1-修改hexo-deployer-git插件" class="headerlink" title="1.修改hexo-deployer-git插件"></a>1.修改hexo-deployer-git插件</h2><p>去目录： yourBlog\node_modules\hexo-deployer-git\lib\parse_config.js<br>VScode按F3查找master全部替换为main</p>
 <h2 id="2-上传文件到main分支"><a href="#2-上传文件到main分支" class="headerlink" title="2.上传文件到main分支"></a>2.上传文件到main分支</h2><p>hexo cl+hexo g+hexo d</p>
-<h2 id="3-删除master分支"><a href="#3-删除master分支" class="headerlink" title="3.删除master分支"></a>3.删除master分支</h2><p>blog文件下打开git执行</p>
+<h2 id="3-删除master分支"><a href="#3-删除master分支" class="headerlink" title="3.删除master分支"></a>3.删除master分支</h2><p><strong>可以不删</strong><br>blog文件下打开git执行</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin :master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
                 
