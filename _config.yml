@@ -139,6 +139,6 @@ lazyload:
   enable: true
   onlypost: true # 如果为 true，则只有来自帖子或页面的图像将支持延迟加载。
                   # 如果为 false，则您网站的整个图像将使用延迟加载，包括来自您主题的图像 dist，但不包括来自 CSS 样式的背景图像。
-  loadingImg:  /images/loading.gif # 加载图片 eg ./images/loading.gif
+  loadingImg:  https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif # 加载图片 eg ./images/loading.gif
   isSPA: true # optional
   preloadRatio: 3 # optional, default is 1
