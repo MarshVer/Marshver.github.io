@@ -418,7 +418,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    146
+                    310
                 </div>
                 
 
@@ -442,9 +442,32 @@
 hexo g
 hexo d
 <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
-<span class="token function">git</span> commit -m <span class="token string">"Backup"</span>
-<span class="token function">git</span> push -u origin <span class="token builtin class-name">source</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Backup"</span>
+<span class="token function">git</span> push <span class="token parameter variable">-u</span> origin <span class="token builtin class-name">source</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>前三个用于上传.deploy_git到github的main；<br>后三个用于上传整个源文件夹到github的branch</p>
+<h1 id="更新hexo和hexo插件"><a href="#更新hexo和hexo插件" class="headerlink" title="更新hexo和hexo插件"></a>更新hexo和hexo插件</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 使用淘宝源的 cnpm 替换 npm</span>
+<span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> cnpm <span class="token parameter variable">--registry</span><span class="token operator">=</span>https://registry.npm.taobao.org
+<span class="token comment"># 升级 npm</span>
+cnpm <span class="token function">install</span> <span class="token parameter variable">-g</span> cnpm     
+<span class="token comment"># 清除 npm 缓存            </span>
+cnpm cache clean <span class="token parameter variable">-f</span>                
+
+<span class="token operator">==</span><span class="token operator">=</span>更新 hexo: 进入 blog 目录，执行如下命令<span class="token operator">==</span><span class="token operator">=</span> 
+<span class="token comment"># 更新 package.json 中的 hexo 及个插件版本</span>
+<span class="token comment"># 检查之前安装的插件，都有哪些是可以升级的 </span>
+cnpm <span class="token function">install</span> <span class="token parameter variable">-g</span> npm-check
+<span class="token comment"># 升级系统中的插件           </span>
+cnpm <span class="token function">install</span> <span class="token parameter variable">-g</span> npm-upgrade         
+npm-check
+npm-upgrade
+<span class="token comment"># 更新 hexo 及所有插件</span>
+cnpm update
+<span class="token comment"># 确认 hexo 已经更新</span>
+hexo <span class="token parameter variable">-v</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注更新完记得把修改的内容改过来：</p>
+<ol>
+<li>D:\MarshVer’s Blog\node_modules\hexo-deployer-git\lib\parse_config.js中的master改为main（F3查询替换）</li>
+</ol>
 <h1 id="恢复博客"><a href="#恢复博客" class="headerlink" title="恢复博客"></a>恢复博客</h1><p>安装git、nodejs、hexo等等。。然后克隆项目到本地<br>输入下列命令克隆博客必须文件(hexo分支)</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/marshver/marshver.github.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在clone下来的那个文件夹里面执行</p>
@@ -1056,12 +1079,19 @@ $(function () {
 
     
 
-<script>
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
             window.imageLazyLoadSetting = {
                 isSPA: true,
                 preloadRatio: 3,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(e){e.imageLazyLoadSetting.processImages=t;var n=e.imageLazyLoadSetting.isSPA,i=e.imageLazyLoadSetting.preloadRatio||1,r=o();function o(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){n&&(r=o());for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(e.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];e=function(){r=r.filter(function(t){return o!==t})},(t=o).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,t.removeAttribute("data-original"),e&&e()},t.src!==i&&(n.src=i))}()}function a(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",a),e.addEventListener("resize",a),e.addEventListener("orientationchange",a)}(this);</script></body>
 
 </html>
