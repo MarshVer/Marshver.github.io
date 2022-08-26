@@ -411,14 +411,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-19
+                    2022-08-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    1.9k
                 </div>
                 
 
@@ -505,6 +505,13 @@
   <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
   <span class="token key atrule">line_threshold</span><span class="token punctuation">:</span> <span class="token number">0</span>
   <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="更改hexo-d的分支"><a href="#更改hexo-d的分支" class="headerlink" title="更改hexo d的分支"></a>更改hexo d的分支</h1><p>由于github将默认分支master改为了main，而hexo-deployer-git插件没有改，所以就算你改了_config.yml的默认分支为main，hexo d后依然会创建一个master指向main，main会有一定延迟接受master分支，所以我们要将hexo-deployer-git插件你指向的master全部改为main</p>
+<h2 id="1-修改hexo-deployer-git插件"><a href="#1-修改hexo-deployer-git插件" class="headerlink" title="1.修改hexo-deployer-git插件"></a>1.修改hexo-deployer-git插件</h2><p>去目录： yourBlog\node_modules\hexo-deployer-git\lib\parse_config.js<br>VScode按F3查找master全部替换为main</p>
+<h2 id="2-上传文件到main分支"><a href="#2-上传文件到main分支" class="headerlink" title="2.上传文件到main分支"></a>2.上传文件到main分支</h2><p>hexo cl+hexo g+hexo d</p>
+<h2 id="3-删除master分支"><a href="#3-删除master分支" class="headerlink" title="3.删除master分支"></a>3.删除master分支</h2><p>blog文件下打开git执行</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin :master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
                 
             </div>
             <hr/>
