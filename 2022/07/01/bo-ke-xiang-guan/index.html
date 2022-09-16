@@ -438,14 +438,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="个人备份习惯"><a href="#个人备份习惯" class="headerlink" title="个人备份习惯"></a>个人备份习惯</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo cl
+                <h1>个人备份习惯</h1>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo cl
 hexo g
 hexo d
 <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
 <span class="token function">git</span> commit -m <span class="token string">"Backup"</span>
 <span class="token function">git</span> push -u origin <span class="token builtin class-name">source</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>前三个用于上传.deploy_git到github的main；<br>后三个用于上传整个源文件夹到github的branch</p>
-<h1 id="更新hexo和hexo插件"><a href="#更新hexo和hexo插件" class="headerlink" title="更新hexo和hexo插件"></a>更新hexo和hexo插件</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 使用淘宝源的 cnpm 替换 npm</span>
+<p>前三个用于上传.deploy_git到github的main；<br>
+后三个用于上传整个源文件夹到github的branch</p>
+<h1>更新hexo和hexo插件</h1>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 使用淘宝源的 cnpm 替换 npm</span>
 <span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org
 <span class="token comment"># 升级 npm</span>
 cnpm <span class="token function">install</span> -g cnpm     
@@ -468,7 +471,9 @@ hexo -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
 <ol>
 <li>D:\MarshVer’s Blog\node_modules\hexo-deployer-git\lib\parse_config.js中的master改为main（F3查询替换）</li>
 </ol>
-<h1 id="恢复博客"><a href="#恢复博客" class="headerlink" title="恢复博客"></a>恢复博客</h1><p>安装git、nodejs、hexo等等。。然后克隆项目到本地<br>输入下列命令克隆博客必须文件(hexo分支)</p>
+<h1>恢复博客</h1>
+<p>安装git、nodejs、hexo等等。。然后克隆项目到本地<br>
+输入下列命令克隆博客必须文件(hexo分支)</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/marshver/marshver.github.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在clone下来的那个文件夹里面执行</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-cli

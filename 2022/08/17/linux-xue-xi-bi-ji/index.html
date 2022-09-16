@@ -442,55 +442,88 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、下载VMware和Centos"><a href="#一、下载VMware和Centos" class="headerlink" title="一、下载VMware和Centos"></a>一、下载VMware和Centos</h1><blockquote>
+                <h1>一、下载VMware和Centos</h1>
+<blockquote>
 <p>VMware16：<a target="_blank" rel="noopener" href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html</a></p>
 <blockquote>
-<p>VMware16密钥：<br>ZF3R0-FHED2-M80TY-8QYGC-NPKYF<br>YF390-0HF8P-M81RQ-2DXQE-M2UT6<br>ZF71R-DMX85-08DQY-8YMNC-PPHV8</p>
+<p>VMware16密钥：<br>
+ZF3R0-FHED2-M80TY-8QYGC-NPKYF<br>
+YF390-0HF8P-M81RQ-2DXQE-M2UT6<br>
+ZF71R-DMX85-08DQY-8YMNC-PPHV8</p>
 </blockquote>
 </blockquote>
 <p>Centos7-DVD：<a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/centos/7/isos/x86_64/">http://mirrors.aliyun.com/centos/7/isos/x86_64/</a></p>
-<h1 id="二、创建虚拟机并导入Centos"><a href="#二、创建虚拟机并导入Centos" class="headerlink" title="二、创建虚拟机并导入Centos"></a>二、创建虚拟机并导入Centos</h1><ol>
-<li><p>典型-稍后安装操作系统</p>
+<h1>二、创建虚拟机并导入Centos</h1>
+<ol>
+<li>
+<p>典型-稍后安装操作系统</p>
 </li>
-<li><p>选择客户机操作系统为红帽7：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/RoBmZ4x6Qg7I3yf.png"></p>
+<li>
+<p>选择客户机操作系统为红帽7：<br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/RoBmZ4x6Qg7I3yf.png" alt></p>
 </li>
-<li><p>命名虚拟机名称-选择安装位置-20G、拆分成多个文件-自定义硬件</p>
+<li>
+<p>命名虚拟机名称-选择安装位置-20G、拆分成多个文件-自定义硬件</p>
 </li>
-<li><p>自定义硬件只需根据自己的CPU选择合适的处理器数量和内核数量就行</p>
+<li>
+<p>自定义硬件只需根据自己的CPU选择合适的处理器数量和内核数量就行</p>
 </li>
 </ol>
-<p>打开任务管理器-性能，选择资源监视器：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/zGWJsqkhVciKAQa.png"></p>
-<p>处理器全给，核数给一半：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/o4O1PKuCMbgFzIS.png"></p>
+<p>打开任务管理器-性能，选择资源监视器：<br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/zGWJsqkhVciKAQa.png" alt></p>
+<p>处理器全给，核数给一半：<br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/o4O1PKuCMbgFzIS.png" alt></p>
 <ol start="5">
-<li><p>最后编辑虚拟机设置，将CD&#x2F;DVD指向ISO映像文件：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/8mqIZHfFgWLoYeR.png"></p>
+<li>
+<p>最后编辑虚拟机设置，将CD/DVD指向ISO映像文件：<br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/8mqIZHfFgWLoYeR.png" alt></p>
 </li>
-<li><p>打开虚拟机install Centos，选择简体中文，选择软件选择：<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/6fBGa43RsV2vC9K.png"></p>
+<li>
+<p>打开虚拟机install Centos，选择简体中文，选择软件选择：<br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/17/6fBGa43RsV2vC9K.png" alt></p>
 </li>
-<li><p>选择安装目标位置，我要配置分区。<br>一般将linux分成三个区：&#x2F;boot分区（引导分区），swap分区（交换分区），&#x2F;（根分区）<br>&#x2F;boot：1G；swap：与运存大小一致，2G；根分区（&#x2F;）：剩余内存，17G<br>设备类型：标准分区<br>文件系统选择：ext4，swap，ext4</p>
+<li>
+<p>选择安装目标位置，我要配置分区。<br>
+一般将linux分成三个区：/boot分区（引导分区），swap分区（交换分区），/（根分区）<br>
+/boot：1G；swap：与运存大小一致，2G；根分区（/）：剩余内存，17G<br>
+设备类型：标准分区<br>
+文件系统选择：ext4，swap，ext4</p>
 </li>
-<li><p>KDUMP实际运行开启，学习可关闭节约内存</p>
+<li>
+<p>KDUMP实际运行开启，学习可关闭节约内存</p>
 </li>
-<li><p>选择网络和主机名，启用并修改主机名即可完成</p>
+<li>
+<p>选择网络和主机名，启用并修改主机名即可完成</p>
 </li>
-<li><p>开始安装，设置root密码（实际密码应较为复杂为好：<a target="_blank" rel="noopener" href="https://suijimimashengcheng.bmcx.com/">https://suijimimashengcheng.bmcx.com/</a> ）并创建用户</p>
+<li>
+<p>开始安装，设置root密码（实际密码应较为复杂为好：<a target="_blank" rel="noopener" href="https://suijimimashengcheng.bmcx.com/">https://suijimimashengcheng.bmcx.com/</a> ）并创建用户</p>
 </li>
 </ol>
-<h1 id="三、网络连接的三种模式"><a href="#三、网络连接的三种模式" class="headerlink" title="三、网络连接的三种模式"></a>三、网络连接的三种模式</h1><ol>
+<h1>三、网络连接的三种模式</h1>
+<ol>
 <li>桥接模式：虚拟机网络地址和主机属于同一网段，可以与外部系统通讯，但是容易造成IP冲突</li>
 <li><strong>NAT模式</strong>：网络地址转换，可以与外部系统通讯（以主机地址为代理发送和接受信息），不容易造成IP冲突</li>
 <li>主机模式：独立系统，不予外部系统通讯</li>
 </ol>
-<h1 id="四、安装vmtools"><a href="#四、安装vmtools" class="headerlink" title="四、安装vmtools"></a>四、安装vmtools</h1><p>VMtools通过主机建立文件夹再用虚拟机的共享文件夹与其链接，实现主机和虚拟机系统的共享操作。</p>
+<h1>四、安装vmtools</h1>
+<p>VMtools通过主机建立文件夹再用虚拟机的共享文件夹与其链接，实现主机和虚拟机系统的共享操作。</p>
 <ol>
 <li>进入centos（root登录）</li>
 <li>虚拟机菜单重新安装vmtools</li>
 <li>打开光驱文件复制压缩包到<strong>主文件夹-其他位置-计算机-opt</strong>文件下</li>
-<li>使用解压命令 tar，得到一个安装文件<br>cd &#x2F;opt (进入opt目录)<br>tar -zxvf VMwareTools-10.3.23-16594550.tar.gz(解压文件，可输入tar -zxvf VM+tab快速识别文件名，下面的操作同理，需要注意大小写)</li>
-<li>进入VM解压的目录<br>cd vmware-tools-distrib&#x2F;<br>ls</li>
-<li>安装VMstolls<br>.&#x2F;vmware-install.pl<br>一直确定即可</li>
+<li>使用解压命令 tar，得到一个安装文件<br>
+cd /opt (进入opt目录)<br>
+tar -zxvf VMwareTools-10.3.23-16594550.tar.gz(解压文件，可输入tar -zxvf VM+tab快速识别文件名，下面的操作同理，需要注意大小写)</li>
+<li>进入VM解压的目录<br>
+cd vmware-tools-distrib/<br>
+ls</li>
+<li>安装VMstolls<br>
+./vmware-install.pl<br>
+一直确定即可</li>
 <li>主机建立文件夹（myshare），虚拟机系统设置-选项，启用共享文件夹并设置位置为myshare的位置，myshare将出现在<strong>主文件夹-其他位置-计算机-mnt-hgfs</strong>的文件夹里</li>
 </ol>
-<h1 id="五、linux目录结构"><a href="#五、linux目录结构" class="headerlink" title="五、linux目录结构"></a>五、linux目录结构</h1><p>linux一切皆文件</p>
+<h1>五、linux目录结构</h1>
+<p>linux一切皆文件</p>
 <table>
 <thead>
 <tr>
@@ -498,106 +531,120 @@
 <th>存放的内容</th>
 </tr>
 </thead>
-<tbody><tr>
-<td><strong>&#x2F;bin</strong>（&#x2F;usr&#x2F;bin,&#x2F;usr&#x2F;local&#x2F;bin）</td>
+<tbody>
+<tr>
+<td><strong>/bin</strong>（/usr/bin,/usr/local/bin）</td>
 <td>经常使用的指令（binary）</td>
 </tr>
 <tr>
-<td><strong>&#x2F;sbin</strong> (&#x2F;usr&#x2F;sbin,&#x2F;usr&#x2F;local&#x2F;sbin)</td>
+<td><strong>/sbin</strong> (/usr/sbin,/usr/local/sbin)</td>
 <td>系统管理员使用的指令（super binary）</td>
 </tr>
 <tr>
-<td><strong>&#x2F;home</strong></td>
+<td><strong>/home</strong></td>
 <td>存放普通用户的主目录，目录名是用户的账号名</td>
 </tr>
 <tr>
-<td><strong>&#x2F;root</strong></td>
+<td><strong>/root</strong></td>
 <td>系统管理员的用户主目录</td>
 </tr>
 <tr>
-<td><strong>&#x2F;etc</strong></td>
+<td><strong>/etc</strong></td>
 <td>系统管理所需要的配置文件和子目录my.conf</td>
 </tr>
 <tr>
-<td><strong>&#x2F;usr</strong></td>
+<td><strong>/usr</strong></td>
 <td>用户的很多应用程序和文件都放在这个目录下，类似于Windows下的program files目录</td>
 </tr>
 <tr>
-<td><strong>&#x2F;boot</strong></td>
+<td><strong>/boot</strong></td>
 <td>linux系统启动的核心文件，包括链接文件和镜像文件</td>
 </tr>
 <tr>
-<td><strong>&#x2F;media</strong></td>
+<td><strong>/media</strong></td>
 <td>linux自动识别一些设备，例如U盘，光驱等，当识别后，linux会把识别的设备挂载到这个目录下</td>
 </tr>
 <tr>
-<td><strong>&#x2F;mnt</strong></td>
-<td>系统提供该目录为了让用户临时挂载别的文件系统，我们可以将外露的存储挂载在&#x2F;,mt&#x2F;上，然后进入该目录就可以查看里的内容了。d:&#x2F;myshar</td>
+<td><strong>/mnt</strong></td>
+<td>系统提供该目录为了让用户临时挂载别的文件系统，我们可以将外露的存储挂载在/,mt/上，然后进入该目录就可以查看里的内容了。d:/myshar</td>
 </tr>
 <tr>
-<td><strong>&#x2F;usr&#x2F;local</strong></td>
+<td><strong>/usr/local</strong></td>
 <td>给主机额外安装软件所安装的目录，一般通过编译源码方式安装的程序</td>
 </tr>
 <tr>
-<td><strong>&#x2F;var</strong></td>
+<td><strong>/var</strong></td>
 <td>存放着不断扩充者的东西，习惯将经常被修改的目录放在这个目录下。包括各种日志文件</td>
 </tr>
 <tr>
-<td>&#x2F;opt</td>
+<td>/opt</td>
 <td>给之际额外<strong>安装软件</strong>所摆放的目录，默认为空（安装包）</td>
 </tr>
 <tr>
-<td>&#x2F;lib</td>
+<td>/lib</td>
 <td>系统开机所需的最基本的动态连接共享库，作用类似于Windows里的DLL文件，几乎所有的应用程序都需要这些共享库</td>
 </tr>
 <tr>
-<td>&#x2F;lost+found</td>
+<td>/lost+found</td>
 <td>一般情况下是空的，系统非法关机后会生成一些文件</td>
 </tr>
 <tr>
-<td>&#x2F;tmp</td>
+<td>/tmp</td>
 <td>存放临时文件</td>
 </tr>
 <tr>
-<td>&#x2F;dev</td>
+<td>/dev</td>
 <td>类似于windows的设备管理器，把所有硬件用文件的形式存储</td>
 </tr>
 <tr>
-<td>&#x2F;selinux</td>
+<td>/selinux</td>
 <td>[security-enhanced linux]安全子系统，它能控制程序只能访问特定文件，有三种工作模式，可以自行设置</td>
 </tr>
 <tr>
-<td><em>&#x2F;proc（不能动）</em></td>
+<td><em>/proc（不能动）</em></td>
 <td>虚拟的目录，存放系统内存的映射，访问这个目录获取系统信息</td>
 </tr>
 <tr>
-<td><em>&#x2F;srv（不能动）</em></td>
+<td><em>/srv（不能动）</em></td>
 <td>服务启动之后需要提取的数据</td>
 </tr>
 <tr>
-<td><em>&#x2F;sys（不能动）</em></td>
+<td><em>/sys（不能动）</em></td>
 <td>这是linux2.6内核的一个很大的变化。该目录下安装了2.6内核中新出现的一个文件系统sysfs</td>
 </tr>
-</tbody></table>
-<h1 id="六、远程登陆linux和传送文件"><a href="#六、远程登陆linux和传送文件" class="headerlink" title="六、远程登陆linux和传送文件"></a>六、远程登陆linux和传送文件</h1><h2 id="1-下载Xshell和Xftp"><a href="#1-下载Xshell和Xftp" class="headerlink" title="1.下载Xshell和Xftp"></a>1.下载Xshell和Xftp</h2><p>官网：<a target="_blank" rel="noopener" href="https://www.xshell.com/zh/free-for-home-school/">https://www.xshell.com/zh/free-for-home-school/</a> 下载两者<br>百度网盘下载链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1t-XCh7OYZhPgYX1GHQJanA?pwd=1111">https://pan.baidu.com/s/1t-XCh7OYZhPgYX1GHQJanA?pwd=1111</a> </p>
-<h2 id="2-查询linux系统ip地址"><a href="#2-查询linux系统ip地址" class="headerlink" title="2.查询linux系统ip地址"></a>2.查询linux系统ip地址</h2><p>进入linux终端，输入ifconfig<br>ens33中的inet后面的就是IP地址，如：192.168.232.128</p>
-<h2 id="3-远程登录linux"><a href="#3-远程登录linux" class="headerlink" title="3.远程登录linux"></a>3.远程登录linux</h2><ol>
+</tbody>
+</table>
+<h1>六、远程登陆linux和传送文件</h1>
+<h2 id="1-下载Xshell和Xftp">1.下载Xshell和Xftp</h2>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.xshell.com/zh/free-for-home-school/">https://www.xshell.com/zh/free-for-home-school/</a> 下载两者<br>
+百度网盘下载链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1t-XCh7OYZhPgYX1GHQJanA?pwd=1111">https://pan.baidu.com/s/1t-XCh7OYZhPgYX1GHQJanA?pwd=1111</a></p>
+<h2 id="2-查询linux系统ip地址">2.查询linux系统ip地址</h2>
+<p>进入linux终端，输入ifconfig<br>
+ens33中的inet后面的就是IP地址，如：192.168.232.128</p>
+<h2 id="3-远程登录linux">3.远程登录linux</h2>
+<ol>
 <li>打开Xshell</li>
 <li>新建，名称随意，协议是ssh，主机设为IP地址，端口22-确定</li>
 <li>双击会话，接受并保存，输入root和密码</li>
 </ol>
-<h2 id="4-建立文件传输"><a href="#4-建立文件传输" class="headerlink" title="4.建立文件传输"></a>4.建立文件传输</h2><ol>
+<h2 id="4-建立文件传输">4.建立文件传输</h2>
+<ol>
 <li>打开Xftp</li>
 <li>如3类似新建，协议是SFTP，端口22</li>
 <li>双击会话，输入root和密码</li>
 <li>如文件出现乱码，选择左上角&gt;文件&gt;当前会话属性&gt;选项&gt;编码换成utf-8</li>
 <li>Xftp左大块是windows文件，又大块是linux文件</li>
 </ol>
-<h1 id="七、Vi和Vim"><a href="#七、Vi和Vim" class="headerlink" title="七、Vi和Vim"></a>七、Vi和Vim</h1><h2 id="1-Vi和Vim常用的三种模式"><a href="#1-Vi和Vim常用的三种模式" class="headerlink" title="1.Vi和Vim常用的三种模式"></a>1.Vi和Vim常用的三种模式</h2><p>终端vim+文件名（如hello.java）进入vim编辑。</p>
+<h1>七、Vi和Vim</h1>
+<h2 id="1-Vi和Vim常用的三种模式">1.Vi和Vim常用的三种模式</h2>
+<p>终端vim+文件名（如hello.java）进入vim编辑。</p>
 <ul>
-<li>正常模式（默认）<br>[上下左右]移动光标，[删除字符]或[删除整行]处理文档，[复制、粘贴]处理数据</li>
-<li>插入模式<br>按下i&#x2F;I、o&#x2F;O、a&#x2F;A、r&#x2F;R等任何一个字母进入<strong>编辑模式</strong>，一般按<strong>i</strong>（insert）即可</li>
-<li>命令行模式<br>输入ESC，再输入“:”，这个模式提供你相关指令，完成读取、存盘、替换、离开vim、显示行号等的动作。</li>
+<li>正常模式（默认）<br>
+[上下左右]移动光标，[删除字符]或[删除整行]处理文档，[复制、粘贴]处理数据</li>
+<li>插入模式<br>
+按下i/I、o/O、a/A、r/R等任何一个字母进入<strong>编辑模式</strong>，一般按<strong>i</strong>（insert）即可</li>
+<li>命令行模式<br>
+输入ESC，再输入“:”，这个模式提供你相关指令，完成读取、存盘、替换、离开vim、显示行号等的动作。</li>
 </ul>
 <p>命令行模式三种退出方式：</p>
 <ol>
@@ -605,58 +652,64 @@
 <li>:q(退出不保存)</li>
 <li>:q!(强制退出，不保存)</li>
 </ol>
-<h2 id="2-Vi和Vim常用的快捷键"><a href="#2-Vi和Vim常用的快捷键" class="headerlink" title="2.Vi和Vim常用的快捷键"></a>2.Vi和Vim常用的快捷键</h2><ul>
-<li>拷贝当前行(yy)；拷贝当前向下3行(3yy)；粘贴(p)</li>
+<h2 id="2-Vi和Vim常用的快捷键">2.Vi和Vim常用的快捷键</h2>
+<ul>
+<li>拷贝当前行(yy)；拷贝当前向下3行(3yy)；粘贴§</li>
 <li>删除当前行(dd)；删除当前向下3行(3dd)</li>
-<li>查找某个单词[<strong>命令行下</strong> &#x2F;关键字]，回车查找，输入n是查找下一个</li>
-<li>显示&#x2F;撤销行号[命令行下 :set nu&#x2F;nonu]</li>
+<li>查找某个单词[<strong>命令行下</strong> /关键字]，回车查找，输入n是查找下一个</li>
+<li>显示/撤销行号[命令行下 :set nu/nonu]</li>
 <li>编辑文件，使用快捷键到该文档的最末行(G)和最首行(gg)</li>
 <li>撤销动作(u)</li>
 <li>编辑文件。将光标移动到20行(20+shift+g)</li>
 <li>…更多的可以查看文档</li>
 </ul>
-<h1 id="八、一些指令"><a href="#八、一些指令" class="headerlink" title="八、一些指令"></a>八、一些指令</h1><h2 id="关机和重启命令"><a href="#关机和重启命令" class="headerlink" title="关机和重启命令"></a>关机和重启命令</h2><table>
+<h1>八、一些指令</h1>
+<h2 id="关机和重启命令">关机和重启命令</h2>
+<table>
 <thead>
 <tr>
-<th align="center">指令</th>
-<th align="center">指令说明</th>
+<th style="text-align:center">指令</th>
+<th style="text-align:center">指令说明</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">shutdown -h now</td>
-<td align="center">立刻关机</td>
+<tbody>
+<tr>
+<td style="text-align:center">shutdown -h now</td>
+<td style="text-align:center">立刻关机</td>
 </tr>
 <tr>
-<td align="center">shutdown -h 1</td>
-<td align="center">1分钟后关机</td>
+<td style="text-align:center">shutdown -h 1</td>
+<td style="text-align:center">1分钟后关机</td>
 </tr>
 <tr>
-<td align="center">shutdown</td>
-<td align="center">默认1分钟后关机</td>
+<td style="text-align:center">shutdown</td>
+<td style="text-align:center">默认1分钟后关机</td>
 </tr>
 <tr>
-<td align="center">shutdown -r now</td>
-<td align="center">立即重启</td>
+<td style="text-align:center">shutdown -r now</td>
+<td style="text-align:center">立即重启</td>
 </tr>
 <tr>
-<td align="center">halt</td>
-<td align="center">立即关机</td>
+<td style="text-align:center">halt</td>
+<td style="text-align:center">立即关机</td>
 </tr>
 <tr>
-<td align="center">reboot</td>
-<td align="center">立即重启</td>
+<td style="text-align:center">reboot</td>
+<td style="text-align:center">立即重启</td>
 </tr>
 <tr>
-<td align="center">sync</td>
-<td align="center">内存数据同步到磁盘</td>
+<td style="text-align:center">sync</td>
+<td style="text-align:center">内存数据同步到磁盘</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>注：</p>
 <ul>
 <li>重启和关机前，首先要运行sync，把内存同步到磁盘</li>
 <li>目前的重启和关机指令已经在关机前进行了sync，但最好还是要运行一次sync</li>
 </ul>
-<h2 id="用户登录和注销"><a href="#用户登录和注销" class="headerlink" title="用户登录和注销"></a>用户登录和注销</h2><ul>
+<h2 id="用户登录和注销">用户登录和注销</h2>
+<ul>
 <li>尽量少用root登录，普通用户输入“<strong>su - root</strong>”切换到root用户，或者“<strong>su - 用户名</strong>”切换到其他用户(切换用户后可用logout返回原来的用户)</li>
 <li>提示符下输入logout即可注销用户</li>
 </ul>

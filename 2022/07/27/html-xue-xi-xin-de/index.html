@@ -422,7 +422,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.7k
+                    2.6k
                 </div>
                 
 
@@ -442,15 +442,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>注：vscode添加注释用Alt+Shift+A注释所选内容，ctrl+&#x2F;注释所选整行。</p>
-<h1 id="一、Web标准的构成"><a href="#一、Web标准的构成" class="headerlink" title="一、Web标准的构成"></a>一、Web标准的构成</h1><table>
+                <p>注：vscode添加注释用Alt+Shift+A注释所选内容，ctrl+/注释所选整行。</p>
+<h1>一、Web标准的构成</h1>
+<table>
 <thead>
 <tr>
 <th>标准</th>
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>结构</td>
 <td>用于对<strong>网页元素</strong>进行整理和分类，html</td>
 </tr>
@@ -462,9 +464,11 @@
 <td>行为</td>
 <td>指网页模型的定义及<strong>交互</strong>的编写，Javascript</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>即结构写到Html文件中，表现写到CSS文件中，行为写到Javascript文件中；三者中 <strong>结构</strong> 最重要</p>
-<h1 id="二、基本结构标签"><a href="#二、基本结构标签" class="headerlink" title="二、基本结构标签"></a>二、基本结构标签</h1><table>
+<h1>二、基本结构标签</h1>
+<table>
 <thead>
 <tr>
 <th>标签名</th>
@@ -472,27 +476,29 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
-<td>html和&#x2F;html</td>
+<tbody>
+<tr>
+<td>html和/html</td>
 <td>HTML标签</td>
 <td>页面中最大的标签，我们称为 根标签</td>
 </tr>
 <tr>
-<td>head和&#x2F;head</td>
+<td>head和/head</td>
 <td>文档的头部</td>
 <td>注意在head标签中我们必须要设置的标签是title</td>
 </tr>
 <tr>
-<td>title和&#x2F;title</td>
+<td>title和/title</td>
 <td>文档的标题</td>
 <td>让页面拥有一个属于自己的网页标题</td>
 </tr>
 <tr>
-<td>body和&#x2F;body</td>
+<td>body和/body</td>
 <td>文档的主体</td>
 <td>元素包含文档的所有内容，页面内容基本都是放到body里面的</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>vscode新建html文件，英文“!”,第一个自动创建基本结构如下：</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- 类型声明 --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>zh-CN<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- lang语言种类是zh-CN --></span>
@@ -506,24 +512,28 @@
     主题内容
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h1 id="三、HTML常用标签"><a href="#三、HTML常用标签" class="headerlink" title="三、HTML常用标签"></a>三、HTML常用标签</h1><h2 id="1-标题标签"><a href="#1-标题标签" class="headerlink" title="1.标题标签"></a>1.标题标签</h2><p>&lt;h1&gt;-&lt;h6&gt;6个等级的标题标签</p>
+<h1>三、HTML常用标签</h1>
+<h2 id="1-标题标签">1.标题标签</h2>
+<p>&lt;h1&gt;-&lt;h6&gt;6个等级的标题标签</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>一级标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="2-段落标签"><a href="#2-段落标签" class="headerlink" title="2.段落标签"></a>2.段落标签</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>段落标签<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="2-段落标签">2.段落标签</h2>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>段落标签<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>段落内容随浏览器大小自动变化，段落与段落之间有间隙。</p>
-<h2 id="3-换行标签"><a href="#3-换行标签" class="headerlink" title="3.换行标签"></a>3.换行标签</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/></span></span>换行标签<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="3-换行标签">3.换行标签</h2>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/></span></span>换行标签<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>换行标签是单标签，行之间没有间隙。</p>
-<h2 id="4-文本格式化标签"><a href="#4-文本格式化标签" class="headerlink" title="4.文本格式化标签"></a>4.文本格式化标签</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>加粗<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span>   <span class="token comment">&lt;!-- 也可用&lt;b>&lt;/b> --></span>
+<h2 id="4-文本格式化标签">4.文本格式化标签</h2>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>加粗<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span>   <span class="token comment">&lt;!-- 也可用&lt;b>&lt;/b> --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">></span></span>倾斜<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>   <span class="token comment">&lt;!-- 也可用&lt;i>&lt;/i> --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">></span></span>删除线<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">></span></span>   <span class="token comment">&lt;!-- 也可用&lt;s>&lt;/s> --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ins</span><span class="token punctuation">></span></span>下划线<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ins</span><span class="token punctuation">></span></span>   <span class="token comment">&lt;!-- 也可用&lt;u>&lt;/u> --></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>推荐用前面的。</p>
-<h2 id="5-lt-div-gt-和-lt-span-gt-标签"><a href="#5-lt-div-gt-和-lt-span-gt-标签" class="headerlink" title="5.&lt;div&gt;和&lt;span&gt;标签"></a>5.&lt;div&gt;和&lt;span&gt;标签</h2><p>&lt;div&gt;和&lt;span&gt;没有语义，它们相当于一个盒子，用来装内容。</p>
+<h2 id="5-div-和-span-标签">5.&lt;div&gt;和&lt;span&gt;标签</h2>
+<p>&lt;div&gt;和&lt;span&gt;没有语义，它们相当于一个盒子，用来装内容。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>div独占一行<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>span之间一行显示，但之间有距离<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h2 id="6-图像标签"><a href="#6-图像标签" class="headerlink" title="6.图像标签"></a>6.图像标签</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>图像URL<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="6-图像标签">6.图像标签</h2>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>图像URL<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>img也是单标签，下面是其他属性：</p>
 <table>
 <thead>
@@ -533,7 +543,8 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>src</td>
 <td>图片路径</td>
 <td><strong>必须属性</strong></td>
@@ -563,9 +574,12 @@
 <td>像素</td>
 <td>图像的边框粗细</td>
 </tr>
-</tbody></table>
-<p>设置width或者height其中之一，另一个属性会等比例缩放。<br>border一般不通过html设定，而通过CSS来设定。</p>
-<h2 id="7-相对路径"><a href="#7-相对路径" class="headerlink" title="7.相对路径"></a>7.相对路径</h2><table>
+</tbody>
+</table>
+<p>设置width或者height其中之一，另一个属性会等比例缩放。<br>
+border一般不通过html设定，而通过CSS来设定。</p>
+<h2 id="7-相对路径">7.相对路径</h2>
+<table>
 <thead>
 <tr>
 <th>相对属性分类</th>
@@ -573,27 +587,31 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>同一级路径</td>
 <td></td>
-<td>图像位于html文件同一级 如&lt;img src&#x3D;”hello.jpg” &#x2F;&gt;</td>
+<td>图像位于html文件同一级 如&lt;img src=“hello.jpg” /&gt;</td>
 </tr>
 <tr>
 <td>下一级路径</td>
-<td>&#x2F;</td>
-<td>图像位于hyml文件下一级 &lt;img src&#x3D;”images&#x2F;hello.jpg” &#x2F;&gt;</td>
+<td>/</td>
+<td>图像位于hyml文件下一级 &lt;img src=“images/hello.jpg” /&gt;</td>
 </tr>
 <tr>
 <td>上一级路径</td>
-<td>..&#x2F;</td>
-<td>图像位于html文件上一级 &lt;img src&#x3D;”..&#x2F;hello.jpg” &#x2F;&gt;</td>
+<td>…/</td>
+<td>图像位于html文件上一级 &lt;img src=“…/hello.jpg” /&gt;</td>
 </tr>
-</tbody></table>
-<p>上一级如果出现多层嵌套则用..&#x2F;..&#x2F;.多层.&#x2F;hello.jpg</p>
-<h2 id="8-绝对路径"><a href="#8-绝对路径" class="headerlink" title="8.绝对路径"></a>8.绝对路径</h2><p>从盘符开始，如D:\MarshVer’s Blog\source_posts\Html学习心得\img.jpg。</p>
+</tbody>
+</table>
+<p>上一级如果出现多层嵌套则用…/…/.多层./hello.jpg</p>
+<h2 id="8-绝对路径">8.绝对路径</h2>
+<p>从盘符开始，如D:\MarshVer’s Blog\source_posts\Html学习心得\img.jpg。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>D:\MarshVer<span class="token punctuation">'</span>s Blog\source\_posts\Html学习心得\img.jpg<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>实际开发常用完整的图片网络地址。</p>
-<h2 id="9-超链接标签"><a href="#9-超链接标签" class="headerlink" title="9.超链接标签"></a>9.超链接标签</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>跳转目标<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>目标窗口的弹出方式<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> 文本或图像 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="9-超链接标签">9.超链接标签</h2>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>跳转目标<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>目标窗口的弹出方式<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> 文本或图像 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <table>
 <thead>
 <tr>
@@ -601,7 +619,8 @@
 <th>作业</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>href</td>
 <td>指定链接目标的url地址，<strong>必须属性</strong></td>
 </tr>
@@ -609,20 +628,23 @@
 <td>target</td>
 <td>指定连接打开方式，默认_self，可设置_blank在新窗口中打开</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <ul>
-<li>外部链接href里跳转的目标是网址，网址需要从 <strong>http:&#x2F;&#x2F;</strong> 开始</li>
+<li>外部链接href里跳转的目标是网址，网址需要从 <strong>http://</strong> 开始</li>
 <li>内部链接href里跳转的目标是本地html文件的相对地址，</li>
 <li>空链接href里填写#临时替代，</li>
 <li>下载链接href填写的是文件就是下载文件（.exe，.zip等）。</li>
 </ul>
-<h2 id="10-锚点链接"><a href="#10-锚点链接" class="headerlink" title="10.锚点链接"></a>10.锚点链接</h2><p>锚点链接可以快速定位到页面的某个位置。</p>
+<h2 id="10-锚点链接">10.锚点链接</h2>
+<p>锚点链接可以快速定位到页面的某个位置。</p>
 <ul>
-<li>在链接文本的href属性中，设置属性值为 <strong>#名字</strong> 的形式，如 &lt;a href&#x3D;”#two”&gt; 锚点&lt;&#x2F;a&gt;</li>
-<li>找到目标位置标签，里面添加一个 <strong>id属性</strong>，如&lt;h3 id&#x3D;”two”&gt;锚点介绍&lt;&#x2F;h3&gt;</li>
+<li>在链接文本的href属性中，设置属性值为 <strong>#名字</strong> 的形式，如 &lt;a href=“#two”&gt; 锚点&lt;/a&gt;</li>
+<li>找到目标位置标签，里面添加一个 <strong>id属性</strong>，如&lt;h3 id=“two”&gt;锚点介绍&lt;/h3&gt;</li>
 </ul>
 <p>锚点链接类似于超链接标签，只是href里的内容不同，同时还需要在跳转的目的字段加入id属性。</p>
-<h2 id="11-特殊字符"><a href="#11-特殊字符" class="headerlink" title="11.特殊字符"></a>11.特殊字符</h2><p>html文件中的某些特殊字符可能无法显示，需要用特定的代码代替，常用的如下：</p>
+<h2 id="11-特殊字符">11.特殊字符</h2>
+<p>html文件中的某些特殊字符可能无法显示，需要用特定的代码代替，常用的如下：</p>
 <table>
 <thead>
 <tr>
@@ -631,7 +653,8 @@
 <th>字符的代码</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>&lt;</td>
 <td>小于号</td>
 <td>&amp;lt;</td>
@@ -646,8 +669,12 @@
 <td>空格符</td>
 <td>&amp;nbsp;</td>
 </tr>
-</tbody></table>
-<h1 id="四、表格标签"><a href="#四、表格标签" class="headerlink" title="四、表格标签"></a>四、表格标签</h1><h2 id="1-表格相关标签"><a href="#1-表格相关标签" class="headerlink" title="1.表格相关标签"></a>1.表格相关标签</h2><h3 id="1-表格标签基本结构"><a href="#1-表格标签基本结构" class="headerlink" title="(1)表格标签基本结构"></a>(1)表格标签基本结构</h3><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+</tbody>
+</table>
+<h1>四、表格标签</h1>
+<h2 id="1-表格相关标签">1.表格相关标签</h2>
+<h3 id="1-表格标签基本结构">(1)表格标签基本结构</h3>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>单元格内的文字<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
         ...
@@ -655,11 +682,12 @@
     ...
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>&lt;table&gt;&lt;&#x2F;table&gt;定义表格</li>
-<li>&lt;tr&gt;&lt;&#x2F;tr&gt;定义表格中的行，必须嵌套在&lt;table&gt;&lt;&#x2F;table&gt;中</li>
-<li>&lt;td&gt;&lt;&#x2F;td&gt;定义表格中的单元格，必须嵌套在&lt;tr&gt;&lt;&#x2F;tr&gt;中</li>
+<li>&lt;table&gt;&lt;/table&gt;定义表格</li>
+<li>&lt;tr&gt;&lt;/tr&gt;定义表格中的行，必须嵌套在&lt;table&gt;&lt;/table&gt;中</li>
+<li>&lt;td&gt;&lt;/td&gt;定义表格中的单元格，必须嵌套在&lt;tr&gt;&lt;/tr&gt;中</li>
 </ul>
-<h3 id="2-表头单元格标签"><a href="#2-表头单元格标签" class="headerlink" title="(2)表头单元格标签"></a>(2)表头单元格标签</h3><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+<h3 id="2-表头单元格标签">(2)表头单元格标签</h3>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>单元格内的文字<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
         ...
@@ -667,9 +695,12 @@
     ...
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>表头单元格位于第一行或第一列，其内容默认加粗居中显示。</p>
-<h3 id="3-表格结构标签"><a href="#3-表格结构标签" class="headerlink" title="(3)表格结构标签"></a>(3)表格结构标签</h3><p>在表格标签中，分别用：<strong>&lt;thead&gt;&lt;&#x2F;thead&gt;<strong>标签</strong>表格的头部区域</strong>；<strong>&lt;tbody&gt;&lt;&#x2F;tbody&gt;<strong>标签</strong>表格的主题区域</strong>,这样更好的分清表格结构。</p>
+<h3 id="3-表格结构标签">(3)表格结构标签</h3>
+<p>在表格标签中，分别用：<strong>&lt;thead&gt;&lt;/thead&gt;<strong>标签</strong>表格的头部区域</strong>；<strong>&lt;tbody&gt;&lt;/tbody&gt;<strong>标签</strong>表格的主题区域</strong>,这样更好的分清表格结构。</p>
 <p>&lt;thead&gt;内部必须拥有&lt;tr&gt;标签，位于第一行。</p>
-<h2 id="2-表格属性"><a href="#2-表格属性" class="headerlink" title="2.表格属性"></a>2.表格属性</h2><h3 id="1-一般属性"><a href="#1-一般属性" class="headerlink" title="(1)一般属性"></a>(1)一般属性</h3><p>表格属性实际不常用，一般在CSS中设置。</p>
+<h2 id="2-表格属性">2.表格属性</h2>
+<h3 id="1-一般属性">(1)一般属性</h3>
+<p>表格属性实际不常用，一般在CSS中设置。</p>
 <table>
 <thead>
 <tr>
@@ -678,14 +709,15 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>align</td>
 <td>left，center、right</td>
 <td>表格对齐方式</td>
 </tr>
 <tr>
 <td>border</td>
-<td>1或””</td>
+<td>1或&quot;&quot;</td>
 <td>单元格是否有边框，默认没有</td>
 </tr>
 <tr>
@@ -703,37 +735,47 @@
 <td>像素值或百分比</td>
 <td>表格宽度</td>
 </tr>
-</tbody></table>
-<h3 id="2-合并单元格属性"><a href="#2-合并单元格属性" class="headerlink" title="(2)合并单元格属性"></a>(2)合并单元格属性</h3><ul>
-<li>跨行合并：rowspan&#x3D;”合并单元格的个数”（写在上测单元格）</li>
-<li>跨列合并：colspan&#x3D;”合并单元格的个数”（写在左侧单元格）<br>合并单元格个数包括自己，作为单元格的属性。</li>
+</tbody>
+</table>
+<h3 id="2-合并单元格属性">(2)合并单元格属性</h3>
+<ul>
+<li>跨行合并：rowspan=“合并单元格的个数”（写在上测单元格）</li>
+<li>跨列合并：colspan=“合并单元格的个数”（写在左侧单元格）<br>
+合并单元格个数包括自己，作为单元格的属性。</li>
 </ul>
 <p>合并单元格三部曲：</p>
 <ul>
 <li>确定跨行还是跨列</li>
-<li>找到目标单元格，写上合并方式&#x3D;合并的单元格的数量如：&lt;td colspan&#x3D;”2”&gt;单元格内容&lt;&#x2F;td&gt;</li>
+<li>找到目标单元格，写上合并方式=合并的单元格的数量如：&lt;td colspan=“2”&gt;单元格内容&lt;/td&gt;</li>
 <li>删除多余的单元格</li>
 </ul>
-<h1 id="五、列表标签"><a href="#五、列表标签" class="headerlink" title="五、列表标签"></a>五、列表标签</h1><p>列表最大的特点就是整齐、整洁、有序。它作为布局会更加自由和方便。</p>
-<h2 id="1-无序列表（重点）"><a href="#1-无序列表（重点）" class="headerlink" title="1.无序列表（重点）"></a>1.无序列表（重点）</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+<h1>五、列表标签</h1>
+<p>列表最大的特点就是整齐、整洁、有序。它作为布局会更加自由和方便。</p>
+<h2 id="1-无序列表（重点）">1.无序列表（重点）</h2>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
     ...
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>&lt;ul&gt;&lt;&#x2F;ul&gt;中只能嵌套&lt;li&gt;&lt;&#x2F;li&gt;，但&lt;li&gt;&lt;&#x2F;li&gt;中可以容纳所有元素。</p>
+<p>&lt;ul&gt;&lt;/ul&gt;中只能嵌套&lt;li&gt;&lt;/li&gt;，但&lt;li&gt;&lt;/li&gt;中可以容纳所有元素。</p>
 <p>无序列表有自己的属性，但实际一般会使用CSS来设置</p>
-<h2 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h2><p>&lt;ol&gt;&lt;&#x2F;ol&gt;标签用于定义有序列表，列表排序已数字显示，使用&lt;li&gt;&lt;&#x2F;li&gt;标签定义列表项。</p>
+<h2 id="2-有序列表">2.有序列表</h2>
+<p>&lt;ol&gt;&lt;/ol&gt;标签用于定义有序列表，列表排序已数字显示，使用&lt;li&gt;&lt;/li&gt;标签定义列表项。</p>
 <p>其他与无序列表一样。</p>
-<h2 id="3-自定义列表（重点）"><a href="#3-自定义列表（重点）" class="headerlink" title="3.自定义列表（重点）"></a>3.自定义列表（重点）</h2><p>自定义列表常用于对术语或名词进行解释和描述。</p>
+<h2 id="3-自定义列表（重点）">3.自定义列表（重点）</h2>
+<p>自定义列表常用于对术语或名词进行解释和描述。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>名词1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>名词1解释1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>名词1解释2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>&lt;dl&gt;&lt;&#x2F;dl&gt;里面只能有&lt;dt&gt;&lt;&#x2F;dt&gt;和&lt;dd&gt;&lt;&#x2F;dd&gt;<br>一个&lt;dt&gt;&lt;&#x2F;dt&gt;对应多个&lt;dd&gt;&lt;&#x2F;dd&gt;</p>
-<h2 id="4-表单标签"><a href="#4-表单标签" class="headerlink" title="4.表单标签"></a>4.表单标签</h2><p>表单用于收集用户信息。</p>
-<h3 id="1-表单域"><a href="#1-表单域" class="headerlink" title="(1)表单域"></a>(1)表单域</h3><p>&lt;form&gt;&lt;&#x2F;form&gt;会把它范围内的表单元素信息提交给服务器。</p>
+<p>&lt;dl&gt;&lt;/dl&gt;里面只能有&lt;dt&gt;&lt;/dt&gt;和&lt;dd&gt;&lt;/dd&gt;<br>
+一个&lt;dt&gt;&lt;/dt&gt;对应多个&lt;dd&gt;&lt;/dd&gt;</p>
+<h2 id="4-表单标签">4.表单标签</h2>
+<p>表单用于收集用户信息。</p>
+<h3 id="1-表单域">(1)表单域</h3>
+<p>&lt;form&gt;&lt;/form&gt;会把它范围内的表单元素信息提交给服务器。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url地址<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>提交方式<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>表单域名称<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
     各种表单元素控件
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -745,14 +787,15 @@
 <th>作用</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>action</td>
 <td>url地址</td>
 <td>指定接收并处理表单数据的服务器程序的url地址</td>
 </tr>
 <tr>
 <td>method</td>
-<td>get&#x2F;post</td>
+<td>get/post</td>
 <td>设置表单数据的提交方式</td>
 </tr>
 <tr>
@@ -760,9 +803,14 @@
 <td>名称</td>
 <td>指定表单名称</td>
 </tr>
-</tbody></table>
-<h3 id="2-表单控件（元素）"><a href="#2-表单控件（元素）" class="headerlink" title="(2)表单控件（元素）"></a>(2)表单控件（元素）</h3><p>1.input输入表单元素(单标签)<br>2.select下拉表单元素<br>3.textarea文本域元素</p>
-<h4 id="1-input的一些类型"><a href="#1-input的一些类型" class="headerlink" title="1)input的一些类型"></a>1)input的一些类型</h4><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">></span></span>
+</tbody>
+</table>
+<h3 id="2-表单控件（元素）">(2)表单控件（元素）</h3>
+<p>1.input输入表单元素(单标签)<br>
+2.select下拉表单元素<br>
+3.textarea文本域元素</p>
+<h4 id="1-input的一些类型">1)input的一些类型</h4>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">></span></span>
     用户名：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
     <span class="token comment">&lt;!-- text 文本框 用户可以输入任何文字 --></span>
     密码：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
@@ -772,7 +820,8 @@
     爱好：吃饭<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span> 睡觉<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span> 打游戏<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
      <span class="token comment">&lt;!-- checkbox 复选按钮 可以实现多选 --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="2-input的重要属性"><a href="#2-input的重要属性" class="headerlink" title="2)input的重要属性"></a>2)input的重要属性</h4><table>
+<h4 id="2-input的重要属性">2)input的重要属性</h4>
+<table>
 <thead>
 <tr>
 <th>属性</th>
@@ -780,7 +829,8 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>name</td>
 <td>自定义</td>
 <td>定义input元素的名称</td>
@@ -800,21 +850,24 @@
 <td>正整数</td>
 <td>规定输入字符的最大长度</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p><strong>注：</strong></p>
 <ul>
 <li>name属性在radio和checkbox中应相同才能实现各自的功能。</li>
 <li>value值在radio和checkbox中应赋值，这样导入后台才能被识别。</li>
 <li>type，name和value必须填，name和value主要针对后台人员使用。</li>
 </ul>
-<h4 id="3-input的其他属性"><a href="#3-input的其他属性" class="headerlink" title="3)input的其他属性"></a>3)input的其他属性</h4><table>
+<h4 id="3-input的其他属性">3)input的其他属性</h4>
+<table>
 <thead>
 <tr>
 <th>属性</th>
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>text</td>
 <td>定义一行文本可输入数据</td>
 </tr>
@@ -842,21 +895,23 @@
 <td>submit</td>
 <td>定义提交按钮，把表单数据发送到服务器</td>
 </tr>
-</tbody></table>
-<h4 id="4-label标签"><a href="#4-label标签" class="headerlink" title="4)label标签"></a>4)label标签</h4><p>label标签用于绑定一个表单元素，当点击label标签内的文本，即可选定。</p>
+</tbody>
+</table>
+<h4 id="4-label标签">4)label标签</h4>
+<p>label标签用于绑定一个表单元素，当点击label标签内的文本，即可选定。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>男<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span>
 <span class="token comment">&lt;!-- label的for属性值与input的id值相同 --></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="5-select标签"><a href="#5-select标签" class="headerlink" title="5)select标签"></a>5)select标签</h4><p>select定义下拉列表。</p>
+<h4 id="5-select标签">5)select标签</h4>
+<p>select定义下拉列表。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">selected</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>selected<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>选项1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- 设置selected为默认选择项 --></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>选项2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>选项3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
     ...
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="6-textarea标签"><a href="#6-textarea标签" class="headerlink" title="6)textarea标签"></a>6)textarea标签</h4><p>textarea定义大量内容的文本框。</p>
+<h4 id="6-textarea标签">6)textarea标签</h4>
+<p>textarea定义大量内容的文本框。</p>
 <pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">rows</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 <span class="token comment">&lt;!-- row和cols在实际开发基本不用，都是用CSS来改变大小 --></span>
     默认文本内容

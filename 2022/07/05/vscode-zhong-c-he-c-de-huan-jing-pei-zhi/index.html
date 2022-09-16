@@ -438,23 +438,36 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="VScode中配置C-x2F-C"><a href="#VScode中配置C-x2F-C" class="headerlink" title="VScode中配置C&#x2F;C++"></a>VScode中配置C&#x2F;C++</h1><p>这是一个教程，（在windows 10中）为vscode配置C&#x2F;C++的运行环境。</p>
-<h2 id="1-下载-VScode"><a href="#1-下载-VScode" class="headerlink" title="1.下载 VScode"></a>1.下载 VScode</h2><p>首先，去 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a> 下载对应操作系统的VScode，下载稳定版本。</p>
-<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/RZea1UrwmcYdODA.png"></p>
-<h2 id="2-安装-VScode"><a href="#2-安装-VScode" class="headerlink" title="2.安装 VScode"></a>2.安装 VScode</h2><p>全选和默认安装。</p>
-<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/7ztxYewrKACLPhn.png"></p>
-<h2 id="3-下载-Gcc编译工具"><a href="#3-下载-Gcc编译工具" class="headerlink" title="3.下载 Gcc编译工具"></a>3.下载 Gcc编译工具</h2><p>去 <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/">https://sourceforge.net/projects/mingw-w64/files/</a> 下载mingw-w64,下面是Windows版本。</p>
-<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/tF6avNq89VO4noH.png"></p>
-<h2 id="4-解压-Gcc"><a href="#4-解压-Gcc" class="headerlink" title="4.解压 Gcc"></a>4.解压 Gcc</h2><p>解压 gcc 到你喜欢的位置,例如C盘的根目录。</p>
-<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/IbtenwvsYdZES5y.png"></p>
-<h2 id="5-配置环境变量"><a href="#5-配置环境变量" class="headerlink" title="5.配置环境变量"></a>5.配置环境变量</h2><p>为了让程序访问这些编译器，你需要添加gcc-bin文件夹的目录 (我的是 C: \mingw64 \ bin ,选择地址复制) 到用户变量Path中。<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/A9qKemdkTcujgO8.png"><br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/HbkICMA7tT3hlOj.png"><br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/QmwbOLZMJUp164y.png"><br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/QzsNOWr8xq7HFL3.png"></p>
-<p>现在证明一下是否配置成功，任意地方打开cmd，输入 gcc –version (中间有个空格), 点击确定, 如果看到如下的版本号，则证明配置成功。<br><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/m9JecMhb4jXY2xo.png"></p>
-<h2 id="6-配置你的代码文件夹"><a href="#6-配置你的代码文件夹" class="headerlink" title="6.配置你的代码文件夹"></a>6.配置你的代码文件夹</h2><p>在你喜欢的地方建一个文件夹名为CODE_ C,在这个文件夹中,你能放入你的C语言程序。如果你想放入其他语言的程序，可以新建一个新的文件夹。</p>
-<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/Pz7CN6BZWlVRDSr.png"></p>
+                <h1>VScode中配置C/C++</h1>
+<p>这是一个教程，（在windows 10中）为vscode配置C/C++的运行环境。</p>
+<h2 id="1-下载-VScode">1.下载 VScode</h2>
+<p>首先，去 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a> 下载对应操作系统的VScode，下载稳定版本。</p>
+<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/RZea1UrwmcYdODA.png" alt></p>
+<h2 id="2-安装-VScode">2.安装 VScode</h2>
+<p>全选和默认安装。</p>
+<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/7ztxYewrKACLPhn.png" alt></p>
+<h2 id="3-下载-Gcc编译工具">3.下载 Gcc编译工具</h2>
+<p>去 <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/">https://sourceforge.net/projects/mingw-w64/files/</a> 下载mingw-w64,下面是Windows版本。</p>
+<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/tF6avNq89VO4noH.png" alt></p>
+<h2 id="4-解压-Gcc">4.解压 Gcc</h2>
+<p>解压 gcc 到你喜欢的位置,例如C盘的根目录。</p>
+<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/IbtenwvsYdZES5y.png" alt></p>
+<h2 id="5-配置环境变量">5.配置环境变量</h2>
+<p>为了让程序访问这些编译器，你需要添加gcc-bin文件夹的目录 (我的是 C: \mingw64 \ bin ,选择地址复制) 到用户变量Path中。<br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/A9qKemdkTcujgO8.png" alt><br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/HbkICMA7tT3hlOj.png" alt><br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/QmwbOLZMJUp164y.png" alt><br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/QzsNOWr8xq7HFL3.png" alt></p>
+<p>现在证明一下是否配置成功，任意地方打开cmd，输入 gcc --version (中间有个空格), 点击确定, 如果看到如下的版本号，则证明配置成功。<br>
+<img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/m9JecMhb4jXY2xo.png" alt></p>
+<h2 id="6-配置你的代码文件夹">6.配置你的代码文件夹</h2>
+<p>在你喜欢的地方建一个文件夹名为CODE_ C,在这个文件夹中,你能放入你的C语言程序。如果你想放入其他语言的程序，可以新建一个新的文件夹。</p>
+<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/Pz7CN6BZWlVRDSr.png" alt></p>
 <p>在 CODE_C 文件夹中，你可以创建两个文件夹 C_Single 和 C_Multiple。前面一个可以放单个小项目，后面一个可以放复杂的大项目。</p>
-<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/7d8qEPgsAUG4lwL.png"></p>
-<h2 id="7-配置VScode"><a href="#7-配置VScode" class="headerlink" title="7.配置VScode"></a>7.配置VScode</h2><p>打开你的VScode，并打开C_Single文件夹，新建如图文件夹和文件：</p>
-<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/j1zDhbCVXqEt3H9.png"></p>
+<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/7d8qEPgsAUG4lwL.png" alt></p>
+<h2 id="7-配置VScode">7.配置VScode</h2>
+<p>打开你的VScode，并打开C_Single文件夹，新建如图文件夹和文件：</p>
+<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/j1zDhbCVXqEt3H9.png" alt></p>
 <p>launch.json:</p>
 <pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
     <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.2.0"</span><span class="token punctuation">,</span>
@@ -526,11 +539,13 @@
     <span class="token punctuation">]</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>第三行代码如果是配置C++的环境则改成g++（配置C++只有这一步与C不同，其他的跟配置C环境相同）。</p>
-<h2 id="8-最后"><a href="#8-最后" class="headerlink" title="8.最后"></a>8.最后</h2><p>现在，你可以将vscode的快捷键设置为F4并编写C语言代码。按F4运行C语言代码，F5是dubug。</p>
-<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/kdxFJ2PjTeSAB4y.png"></p>
+<h2 id="8-最后">8.最后</h2>
+<p>现在，你可以将vscode的快捷键设置为F4并编写C语言代码。按F4运行C语言代码，F5是dubug。</p>
+<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/kdxFJ2PjTeSAB4y.png" alt></p>
 <p>运行C语言代码时，运行文件将显示在bin文件夹中。</p>
-<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/MUfF5iXSkvT1hJW.png"></p>
-<h2 id="现在开始你的编程之旅吧"><a href="#现在开始你的编程之旅吧" class="headerlink" title="现在开始你的编程之旅吧!"></a>现在开始你的编程之旅吧!</h2>
+<p><img src="https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif" data-original="https://s2.loli.net/2022/08/03/MUfF5iXSkvT1hJW.png" alt></p>
+<h2 id="现在开始你的编程之旅吧">现在开始你的编程之旅吧!</h2>
+
                 
             </div>
             <hr/>

@@ -28,7 +28,8 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;一、绪论&quot;&gt;&lt;a href=&quot;#一、绪论&quot; class=&quot;headerlink&quot; title=&quot;一、绪论&quot;&gt;&lt;/a&gt;一、绪论&lt;/h1&gt;&lt;h2 id=&quot;1-数据结构基本概念&quot;&gt;&lt;a href=&quot;#1-数据结构基本概念&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1&gt;一、绪论&lt;/h1&gt;
+&lt;h2</summary>
         
       
     
@@ -51,8 +52,14 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;在正方形里打勾&quot;&gt;&lt;a href=&quot;#在正方形里打勾&quot; class=&quot;headerlink&quot; title=&quot;在正方形里打勾&quot;&gt;&lt;/a&gt;在正方形里打勾&lt;/h1&gt;&lt;p&gt;输入2611，全选ALT+x即可出现打勾的正方形&lt;/p&gt;
-&lt;h1 id=&quot;上下标&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h1&gt;在正方形里打勾&lt;/h1&gt;
+&lt;p&gt;输入2611，全选ALT+x即可出现打勾的正方形&lt;/p&gt;
+&lt;h1&gt;上下标&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;上标：ctrl、shift、+&lt;/li&gt;
+&lt;li&gt;下标：ctrl、+&lt;/li&gt;
+&lt;/ul&gt;
+</summary>
         
       
     
@@ -76,7 +83,8 @@
         
         
     <summary type="html">&lt;p&gt;注：这种方法申请的域名无法备案。&lt;/p&gt;
-&lt;h1 id=&quot;一、注册并申请域名&quot;&gt;&lt;a href=&quot;#一、注册并申请域名&quot; class=&quot;headerlink&quot; title=&quot;一、注册并申请域名&quot;&gt;&lt;/a&gt;一、注册并申请域名&lt;/h1&gt;&lt;ol&gt;
+&lt;h1&gt;一、注册并申请域名&lt;/h1&gt;
+&lt;ol&gt;
 &lt;li&gt;进入官网：&lt;a</summary>
         
       
@@ -100,7 +108,9 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;一、下载VMware和Centos&quot;&gt;&lt;a href=&quot;#一、下载VMware和Centos&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1&gt;一、下载VMware和Centos&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;VMware16：&lt;a</summary>
         
       
     
@@ -127,7 +137,8 @@
         
     <summary type="html">&lt;p&gt;CSS是层叠样式表的简称，主要用于设置HTML页面中的文本内容，图片的外形以及版面的布局和外观显示样式。&lt;/p&gt;
 &lt;p&gt;注：Alt+Shift+F快速格式化文档，实现代码格式自动调整。&lt;/p&gt;
-&lt;h1 id=&quot;一、CSS语法规范&quot;&gt;&lt;a href=&quot;#一、CSS语法规范&quot;</summary>
+&lt;h1&gt;一、CSS语法规范&lt;/h1&gt;
+&lt;p&gt;CSS规则由两个主要的部分构成：选择</summary>
         
       
     
@@ -152,7 +163,9 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;iGG谷歌访问助手&quot;&gt;&lt;a href=&quot;#iGG谷歌访问助手&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1&gt;iGG谷歌访问助手&lt;/h1&gt;
+&lt;p&gt;谷歌浏览器第一步，下载iGG谷歌助手，再登陆账号同步账号信息。&lt;br&gt;
+下载地址：&lt;a</summary>
         
       
     
@@ -175,8 +188,17 @@
       
         
         
-    <summary type="html">&lt;p&gt;注：vscode添加注释用Alt+Shift+A注释所选内容，ctrl+&amp;#x2F;注释所选整行。&lt;/p&gt;
-&lt;h1 id=&quot;一、Web标准的构成&quot;&gt;&lt;a href=&quot;#一、Web标准的构成&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;注：vscode添加注释用Alt+Shift+A注释所选内容，ctrl+/注释所选整行。&lt;/p&gt;
+&lt;h1&gt;一、Web标准的构成&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;标准&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+</summary>
         
       
     
@@ -201,7 +223,10 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;VScode中配置C-x2F-C&quot;&gt;&lt;a href=&quot;#VScode中配置C-x2F-C&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1&gt;VScode中配置C/C++&lt;/h1&gt;
+&lt;p&gt;这是一个教程，（在windows 10中）为vscode配置C/C++的运行环境。&lt;/p&gt;
+&lt;h2 id=&quot;1-下载-VScode&quot;&gt;1.下载 VScode&lt;/h2&gt;
+&lt;p&gt;首先，去 &lt;a</summary>
         
       
     
@@ -224,8 +249,9 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;图片不显示&quot;&gt;&lt;a href=&quot;#图片不显示&quot; class=&quot;headerlink&quot; title=&quot;图片不显示&quot;&gt;&lt;/a&gt;图片不显示&lt;/h1&gt;&lt;p&gt;在根目录安装hexo-asset-image，就能按照markdown的格式进行图片的插入。&lt;/p&gt;
-&lt;pre</summary>
+    <summary type="html">&lt;h1&gt;图片不显示&lt;/h1&gt;
+&lt;p&gt;在根目录安装hexo-asset-image，就能按照markdown的格式进行图片的插入。&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
         
       
     
@@ -248,7 +274,11 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;个人备份习惯&quot;&gt;&lt;a href=&quot;#个人备份习惯&quot; class=&quot;headerlink&quot; title=&quot;个人备份习惯&quot;&gt;&lt;/a&gt;个人备份习惯&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
+    <summary type="html">&lt;h1&gt;个人备份习惯&lt;/h1&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;hexo cl
+hexo g
+hexo d
+&lt;span</summary>
         
       
     
