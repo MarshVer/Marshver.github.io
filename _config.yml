@@ -142,3 +142,31 @@ lazyload:
   loadingImg:  https://s2.loli.net/2022/08/03/yJ23MDaUGdg7LCk.gif # 加载图片 eg ./images/loading.gif
   isSPA: true # optional
   preloadRatio: 3 # optional, default is 1
+
+# markdown-it渲染配置
+  markdown:
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: 'language-'
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  enable_rules:
+  disable_rules:
+  plugins:
+  anchors:
+    level: 2
+    collisionSuffix: ''
+    permalink: false
+    permalinkClass: 'header-anchor'
+    permalinkSide: 'left'
+    permalinkSymbol: '¶'
+    case: 0
+    separator: '-'
+  images:
+    lazyload: false
+    prepend_root: false
+    post_asset: false
