@@ -103,7 +103,7 @@ deploy:
   type: git
   repository: 
       github: https://github.com/MarshVer/Marshver.github.io.git
-      gitee: https://gitee.com/zhuze1117/marshver.git
+      gitee: https://gitee.com/zhuze1117/zhuze1117.git
   branch: main
 
 # 搜索
