@@ -6,7 +6,7 @@
   <link href="https://marshver.github.io/atom.xml" rel="self"/>
   
   <link href="https://marshver.github.io/"/>
-  <updated>2022-09-10T05:32:24.266Z</updated>
+  <updated>2022-11-26T01:11:28.742Z</updated>
   <id>https://marshver.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装旧版驱动</title>
+    <link href="https://marshver.github.io/2022/11/26/an-zhuang-jiu-ban-qu-dong/"/>
+    <id>https://marshver.github.io/2022/11/26/an-zhuang-jiu-ban-qu-dong/</id>
+    <published>2022-11-26T01:09:42.000Z</published>
+    <updated>2022-11-26T01:11:28.742Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;英伟达官网-&amp;gt; 驱动程序-&amp;gt;GEFORCE驱动程序-&amp;gt; 选择你的显卡型号&lt;br&gt;
+&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="搞机" scheme="https://marshver.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>数据结构</title>
